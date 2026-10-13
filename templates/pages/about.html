@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% load i18n site_tags %}
+{% block content %}
+  {% translate "About us" as t %}
+  {% include "partials/page_header.html" with page_photo='about' page_title=t page_lead=company|tr:'tagline' %}
+  {% include "partials/section_intro.html" %}
+  {% include "partials/section_why.html" %}
+  {% include "partials/section_fleet.html" %}
+  {% include "partials/cta.html" %}
+{% endblock %}

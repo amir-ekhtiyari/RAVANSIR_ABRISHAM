@@ -1,0 +1,3 @@
+{% load i18n %}<nav class="lang-switch" aria-label="{% translate 'Language' %}">
+  {% for l in lang_switch %}<a href="{{ l.url }}" lang="{{ l.code }}" hreflang="{{ l.code }}" title="{{ l.title }}"{% if l.active %} aria-current="true"{% endif %}><span aria-hidden="true">{{ l.label }}</span><span class="visually-hidden">{{ l.title }}</span></a>{% endfor %}
+</nav>

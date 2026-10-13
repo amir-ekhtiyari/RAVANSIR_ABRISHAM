@@ -1,0 +1,29 @@
+{% load i18n site_tags %}{% photo 'about' 'road' as about_photo %}<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container intro">
+    <div class="intro-text reveal">
+      <span class="eyebrow">{% translate "About the company" %}</span>
+      <h2 id="about-title" class="h2">{% translate "Years of experience on the Iran–Turkey–Europe corridor" %}</h2>
+      <div class="intro-copy">{% for paragraph in company|tr_lines:'description' %}<p>{{ paragraph }}</p>{% endfor %}</div>
+      <ul class="values">
+        {% for icon_name, title, text in values %}
+          <li class="value">
+            <span class="ic ic--light">{% icon icon_name 20 %}</span>
+            <div><h3>{{ title }}</h3><p>{{ text }}</p></div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <figure class="intro-figure reveal" data-delay="1">
+      {% if company.about_image %}
+        <img src="{{ company.about_image.url }}" alt="{% translate 'International truck of Ravan Seir Abrisham on the road' %}" loading="lazy" decoding="async">
+      {% elif about_photo %}
+        <img src="{{ about_photo }}" alt="{% translate 'International truck of Ravan Seir Abrisham on the road' %}" loading="lazy" decoding="async">
+      {% endif %}
+      <span class="intro-chip glass-dark">{% icon 'route' 16 %} {% translate "Iran · Turkey · Europe" %}</span>
+      <figcaption class="intro-badge glass-dark">
+        <span class="ic">{% icon 'handshake' 22 %}</span>
+        <div><strong>{% translate "A trusted international network" %}</strong><span>{% translate "Foreign carriers, professional forwarders and trained drivers working as one team." %}</span></div>
+      </figcaption>
+    </figure>
+  </div>
+</section>

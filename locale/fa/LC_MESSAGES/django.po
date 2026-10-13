@@ -1,0 +1,830 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ravansir_abrisham\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Step"
+msgstr "مرحله"
+
+msgid "Optional"
+msgstr "اختیاری"
+
+msgid "Request a transport consultation"
+msgstr "درخواست مشاوره حمل"
+
+msgid "Tell us about your shipment. Our operations team will call you back to discuss the route, truck type and documents."
+msgstr "مشخصات محموله را بنویسید. کارشناسان عملیات ما برای بررسی مسیر، نوع ناوگان و مدارک با شما تماس می‌گیرند."
+
+msgid "Please check the highlighted fields."
+msgstr "لطفاً موارد مشخص‌شده را بررسی کنید."
+
+msgid "Request received"
+msgstr "درخواست شما ثبت شد"
+
+msgid "Something went wrong. Please try again or call us."
+msgstr "مشکلی پیش آمد. لطفاً دوباره تلاش کنید یا با ما تماس بگیرید."
+
+msgid "Turkey"
+msgstr "ترکیه"
+
+msgid "Iran"
+msgstr "ایران"
+
+msgid "Europe"
+msgstr "اروپا"
+
+msgid "Iraq"
+msgstr "عراق"
+
+msgid "Azerbaijan"
+msgstr "آذربایجان"
+
+msgid "Central Asia"
+msgstr "آسیای میانه"
+
+msgid "Your details are used only to answer this request."
+msgstr "اطلاعات شما فقط برای پاسخ به همین درخواست استفاده می‌شود."
+
+msgid "Send request"
+msgstr "ارسال درخواست"
+
+msgid "Map of our active international routes"
+msgstr "نقشه مسیرهای بین‌المللی فعال"
+
+msgid "Bazargan"
+msgstr "بازرگان"
+
+msgid "Jolfa"
+msgstr "جلفا"
+
+msgid "Active route"
+msgstr "مسیر فعال"
+
+msgid "Transit border crossing"
+msgstr "مرز ترانزیتی"
+
+msgid "Active routes"
+msgstr "مسیرهای فعال"
+
+msgid "Connecting Iran, Turkey, Europe and the region"
+msgstr "اتصال ایران، ترکیه، اروپا و کشورهای منطقه"
+
+msgid "Our trucks run on these international corridors every week, with transit operations through Iran’s main border crossings."
+msgstr "ناوگان ما در این کریدورهای بین‌المللی فعال است و عملیات ترانزیت را از مرزهای اصلی کشور انجام می‌دهد."
+
+msgid "Transit operations through the <strong>Bazargan</strong>, <strong>Razi</strong>, <strong>Serow</strong> and <strong>Jolfa</strong> border crossings."
+msgstr "عملیات ترانزیت از مرزهای <strong>بازرگان</strong>، <strong>رازی</strong>، <strong>سرو</strong> و <strong>جلفا</strong>."
+
+msgid "Why choose us"
+msgstr "چرا روان سیر ابریشم"
+
+msgid "A partner you can rely on, border after border"
+msgstr "همراهی مطمئن، از مبدأ تا مقصد"
+
+msgid "International transportation depends on people, partners and paperwork working together. This is how we keep your cargo moving."
+msgstr "حمل‌ونقل بین‌المللی به هماهنگی افراد، شرکا و مدارک وابسته است. این‌گونه محموله شما را در مسیر نگه می‌داریم."
+
+msgid "Talk to our team"
+msgstr "گفت‌وگو با کارشناسان"
+
+msgid "Language"
+msgstr "زبان"
+
+msgid "Iran · Turkey · Europe · Iraq · Azerbaijan"
+msgstr "ایران · ترکیه · اروپا · عراق · آذربایجان"
+
+msgid "Professional road freight, transit and logistics solutions on the routes between Iran, Turkey, Europe and the region."
+msgstr "راهکارهای حرفه‌ای حمل جاده‌ای، ترانزیت و لجستیک در مسیرهای ایران، ترکیه، اروپا و کشورهای منطقه"
+
+msgid "View services"
+msgstr "مشاهده خدمات"
+
+msgid "Our services"
+msgstr "خدمات ما"
+
+msgid "International road freight"
+msgstr "حمل جاده‌ای بین‌المللی"
+
+msgid "Turkey · Europe · Central Asia"
+msgstr "ترکیه · اروپا · آسیای میانه"
+
+msgid "Foreign transit"
+msgstr "ترانزیت خارجی"
+
+msgid "Bazargan · Razi · Serow · Jolfa"
+msgstr "بازرگان · رازی · سرو · جلفا"
+
+msgid "Freight forwarding"
+msgstr "فورواردرینگ"
+
+msgid "One partner for the whole journey"
+msgstr "یک طرف پاسخ‌گو برای تمام مسیر"
+
+msgid "Customs & export"
+msgstr "گمرک و صادرات"
+
+msgid "Coordination with customs offices"
+msgstr "هماهنگی کامل با گمرکات"
+
+msgid "International transportation, <span class=\"accent\">fast, safe and reliable</span>"
+msgstr "حمل‌ونقل بین‌المللی، <span class=\"accent\">سریع، ایمن و مطمئن</span>"
+
+msgid "Transportation fleet"
+msgstr "ناوگان حمل"
+
+msgid "The right truck for every cargo"
+msgstr "ناوگان مناسب برای هر نوع کالا"
+
+msgid "We work with the main truck types used in international road freight, matched to your cargo and route."
+msgstr "با انواع اصلی ناوگان حمل جاده‌ای بین‌المللی کار می‌کنیم و متناسب با نوع کالا و مسیر، بهترین گزینه را انتخاب می‌کنیم."
+
+msgid "Main navigation"
+msgstr "منوی اصلی"
+
+msgid "Request a consultation"
+msgstr "درخواست مشاوره"
+
+msgid "Open menu"
+msgstr "باز کردن منو"
+
+msgid "Menu"
+msgstr "منو"
+
+msgid "Close menu"
+msgstr "بستن منو"
+
+msgid "Office"
+msgstr "دفتر"
+
+msgid "Mobile"
+msgstr "موبایل"
+
+msgid "About the company"
+msgstr "درباره شرکت"
+
+msgid "Years of experience on the Iran–Turkey–Europe corridor"
+msgstr "سال‌ها تجربه در مسیر ایران–ترکیه–اروپا"
+
+msgid "International truck of Ravan Seir Abrisham on the road"
+msgstr "کامیون بین‌المللی روان سیر ابریشم در جاده"
+
+msgid "Iran · Turkey · Europe"
+msgstr "ایران · ترکیه · اروپا"
+
+msgid "A trusted international network"
+msgstr "شبکه بین‌المللی قابل‌اعتماد"
+
+msgid "Foreign carriers, professional forwarders and trained drivers working as one team."
+msgstr "شرکت‌های حمل خارجی، فورواردرهای حرفه‌ای و رانندگان آموزش‌دیده در کنار یکدیگر."
+
+msgid "Contact us"
+msgstr "تماس با ما"
+
+msgid "Let’s plan your next shipment"
+msgstr "حمل بعدی‌تان را با هم برنامه‌ریزی کنیم"
+
+msgid "Call our office or mobile, send an email, or fill in the form and we will get back to you."
+msgstr "با دفتر یا موبایل تماس بگیرید، ایمیل بفرستید یا فرم را تکمیل کنید تا با شما تماس بگیریم."
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "International road transportation, foreign transit, freight forwarding and export transportation on the Iran–Turkey–Europe routes and the region."
+msgstr "حمل‌ونقل جاده‌ای بین‌المللی، ترانزیت خارجی، فورواردرینگ و حمل صادراتی در مسیرهای ایران–ترکیه–اروپا و کشورهای منطقه."
+
+msgid "Breadcrumb"
+msgstr "مسیر صفحه"
+
+msgid "Home"
+msgstr "خانه"
+
+msgid "Have cargo to move between Iran, Turkey or Europe?"
+msgstr "کالایی برای حمل بین ایران، ترکیه یا اروپا دارید؟"
+
+msgid "Send us the origin, destination and cargo type. We will suggest the route, truck type and the documents you need."
+msgstr "مبدأ، مقصد و نوع کالا را برای ما بفرستید تا مسیر، نوع ناوگان و مدارک لازم را به شما پیشنهاد دهیم."
+
+msgid "Details"
+msgstr "جزئیات"
+
+msgid "End-to-end international road logistics"
+msgstr "لجستیک کامل حمل جاده‌ای بین‌المللی"
+
+msgid "From road freight and foreign transit to forwarding, export transportation and customs consulting – one accountable team for the whole journey."
+msgstr "از حمل جاده‌ای و ترانزیت خارجی تا فورواردرینگ، حمل صادراتی و مشاوره گمرکی؛ یک تیم پاسخ‌گو برای تمام مسیر."
+
+msgid "All services"
+msgstr "همه خدمات"
+
+msgid "Navigation"
+msgstr "دسترسی سریع"
+
+msgid "Services"
+msgstr "خدمات"
+
+msgid "Contact"
+msgstr "تماس با ما"
+
+msgid "to"
+msgstr "به"
+
+msgid "All rights reserved."
+msgstr "تمامی حقوق محفوظ است."
+
+msgid "Design & development"
+msgstr "طراحی و توسعه"
+
+msgid "Switch between light and dark theme"
+msgstr "تغییر حالت روشن و تیره"
+
+msgid "International Transportation"
+msgstr "حمل‌ونقل بین‌المللی"
+
+msgid "How it works"
+msgstr "فرایند همکاری"
+
+msgid "The journey of your shipment"
+msgstr "مسیر محموله شما"
+
+msgid "Five clear steps from your first call to delivery at destination."
+msgstr "پنج گام روشن، از اولین تماس تا تحویل کالا در مقصد."
+
+msgid "This page could not be found"
+msgstr "صفحه مورد نظر پیدا نشد"
+
+msgid "The address may be wrong or the page may have moved."
+msgstr "ممکن است نشانی اشتباه باشد یا صفحه جابه‌جا شده باشد."
+
+msgid "Back to the home page"
+msgstr "بازگشت به صفحه اصلی"
+
+msgid "Skip to content"
+msgstr "رفتن به محتوای اصلی"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Back to top"
+msgstr "بازگشت به بالا"
+
+msgid "About us"
+msgstr "درباره ما"
+
+msgid "Request a transport consultation or reach our operations team directly by phone or email."
+msgstr "درخواست مشاوره حمل ثبت کنید یا مستقیماً از طریق تلفن یا ایمیل با تیم عملیات ما در ارتباط باشید."
+
+msgid "International road freight, foreign transit, freight forwarding, export transportation and consulting on transport and customs."
+msgstr "حمل جاده‌ای بین‌المللی، ترانزیت خارجی، فورواردرینگ، حمل صادراتی و مشاوره حمل‌ونقل و گمرک."
+
+msgid "International road freight between Iran, Turkey, Europe, Iraq and Azerbaijan, with transit through Iran’s main border crossings."
+msgstr "حمل جاده‌ای بین ایران، ترکیه، اروپا، عراق و آذربایجان، همراه با عملیات ترانزیت از مرزهای اصلی کشور."
+
+msgid "Ravan Seir Abrisham"
+msgstr "روان سیر ابریشم"
+
+msgid "International Road Freight & Transit | Iran – Turkey – Europe"
+msgstr "حمل‌ونقل بین‌المللی و ترانزیت | ایران – ترکیه – اروپا"
+
+msgid "International road transportation, transit and freight forwarding between Iran, Turkey, Europe and the region. Customs coordination at Bazargan, Razi, Serow and Jolfa. Request a transport consultation."
+msgstr "حمل‌ونقل بین‌المللی جاده‌ای، ترانزیت خارجی و فورواردرینگ بین ایران، ترکیه، اروپا و کشورهای منطقه؛ حمل بار به ترکیه و از ترکیه با هماهنگی گمرکی در مرزهای بازرگان، رازی، سرو و جلفا."
+
+msgid "Services – Road Freight, Transit, Forwarding & Customs Consulting"
+msgstr "خدمات – حمل جاده‌ای، ترانزیت، فورواردرینگ و مشاوره گمرکی"
+
+msgid "International road transportation, transit through Iranian borders, freight forwarding, export transportation and transport and customs consulting."
+msgstr "حمل جاده‌ای بین‌المللی، ترانزیت خارجی از مرزهای ایران، فورواردرینگ، حمل صادراتی و خدمات مشاوره حمل‌ونقل و گمرک."
+
+msgid "Active Routes – Iran, Turkey, Europe, Iraq and Azerbaijan"
+msgstr "مسیرهای فعال – ایران، ترکیه، اروپا، عراق و آذربایجان"
+
+msgid "Our active international road freight routes: Turkey to Iran, Iran to Turkey, Iran to Europe, Iran to Iraq and Iran to Azerbaijan."
+msgstr "مسیرهای فعال حمل جاده‌ای ما: ترکیه به ایران، ایران به ترکیه، حمل کالا به اروپا، ایران به عراق و ایران به آذربایجان."
+
+msgid "About Us"
+msgstr "درباره ما"
+
+msgid "Years of experience in international road transportation, transit and logistics on the Iran–Turkey–Europe corridor, with a network of foreign carriers, forwarders and trained drivers."
+msgstr "سال‌ها تجربه در حمل‌ونقل جاده‌ای بین‌المللی، ترانزیت و لجستیک در مسیر ایران–ترکیه–اروپا، با شبکه‌ای از شرکت‌های حمل خارجی، فورواردرها و رانندگان آموزش‌دیده."
+
+msgid "Contact Us – Request a Transport Consultation"
+msgstr "تماس با ما – درخواست مشاوره حمل"
+
+msgid "Contact our operations team by phone, mobile or email, or send a transport consultation request with your origin, destination and cargo type."
+msgstr "از طریق تلفن دفتر، موبایل یا ایمیل با تیم عملیات تماس بگیرید یا درخواست مشاوره حمل را با ذکر مبدأ، مقصد و نوع کالا ثبت کنید."
+
+msgid "Routes"
+msgstr "مسیرهای فعال"
+
+msgid "Ravan Seir Abrisham – website management"
+msgstr "مدیریت وب‌سایت روان سیر ابریشم"
+
+msgid "Website content"
+msgstr "محتوای وب‌سایت"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Texts"
+msgstr "متن‌ها"
+
+msgid "Contact details"
+msgstr "اطلاعات تماس"
+
+msgid "Images"
+msgstr "تصاویر"
+
+msgid "name (Persian)"
+msgstr "نام (فارسی)"
+
+msgid "name (English)"
+msgstr "نام (انگلیسی)"
+
+msgid "name (Turkish)"
+msgstr "نام (ترکی)"
+
+msgid "short name (Persian)"
+msgstr "نام کوتاه (فارسی)"
+
+msgid "short name (English)"
+msgstr "نام کوتاه (انگلیسی)"
+
+msgid "short name (Turkish)"
+msgstr "نام کوتاه (ترکی)"
+
+msgid "tagline (Persian)"
+msgstr "شعار (فارسی)"
+
+msgid "tagline (English)"
+msgstr "شعار (انگلیسی)"
+
+msgid "tagline (Turkish)"
+msgstr "شعار (ترکی)"
+
+msgid "short description (Persian)"
+msgstr "توضیح کوتاه (فارسی)"
+
+msgid "short description (English)"
+msgstr "توضیح کوتاه (انگلیسی)"
+
+msgid "short description (Turkish)"
+msgstr "توضیح کوتاه (ترکی)"
+
+msgid "full description (Persian)"
+msgstr "معرفی کامل (فارسی)"
+
+msgid "full description (English)"
+msgstr "معرفی کامل (انگلیسی)"
+
+msgid "full description (Turkish)"
+msgstr "معرفی کامل (ترکی)"
+
+msgid "email"
+msgstr "ایمیل"
+
+msgid "office phone"
+msgstr "تلفن دفتر"
+
+msgid "mobile"
+msgstr "موبایل"
+
+msgid "address (Persian)"
+msgstr "نشانی (فارسی)"
+
+msgid "address (English)"
+msgstr "نشانی (انگلیسی)"
+
+msgid "address (Turkish)"
+msgstr "نشانی (ترکی)"
+
+msgid "logo"
+msgstr "لوگو"
+
+msgid "hero photo"
+msgstr "تصویر اصلی صفحه"
+
+msgid "introduction photo"
+msgstr "تصویر بخش معرفی"
+
+msgid "company information"
+msgstr "اطلاعات شرکت"
+
+msgid "Leave empty to hide the address everywhere."
+msgstr "اگر خالی بماند، نشانی در هیچ‌جای سایت نمایش داده نمی‌شود."
+
+msgid "Optional. SVG or PNG; replaces the built-in mark."
+msgstr "اختیاری. فایل SVG یا PNG؛ جایگزین نشان پیش‌فرض می‌شود."
+
+msgid "Wide landscape photo of a truck on a highway (at least 2000 px wide, WebP or JPEG). Replaces the built-in hero illustration."
+msgstr "عکس افقی و عریض از کامیون در جاده (حداقل ۲۰۰۰ پیکسل عرض، WebP یا JPEG). جایگزین تصویر پیش‌فرض بالای صفحه می‌شود."
+
+msgid "Shown next to the company introduction. Replaces the illustration."
+msgstr "کنار متن معرفی شرکت نمایش داده می‌شود و جایگزین طرح پیش‌فرض می‌شود."
+
+msgid "Page not found"
+msgstr "صفحه پیدا نشد"
+
+msgid "Company information"
+msgstr "اطلاعات شرکت"
+
+msgid "Experience"
+msgstr "تجربه"
+
+msgid "Years of experience in road transportation and foreign transit."
+msgstr "سال‌ها تجربه در حمل جاده‌ای و ترانزیت خارجی."
+
+msgid "Safety"
+msgstr "امنیت"
+
+msgid "Careful handling and trained drivers for the safe carriage of goods."
+msgstr "رانندگان آموزش‌دیده و دقت در جابه‌جایی برای حمل ایمن کالا."
+
+msgid "Speed"
+msgstr "سرعت"
+
+msgid "Fast coordination of loading, documents and border crossings."
+msgstr "هماهنگی سریع بارگیری، مدارک و عبور از مرز."
+
+msgid "Transparency"
+msgstr "شفافیت"
+
+msgid "Clear communication and standard, transparent services."
+msgstr "ارتباط روشن و خدمات استاندارد و شفاف."
+
+msgid "International network"
+msgstr "شبکه بین‌المللی"
+
+msgid "Partnerships with foreign carriers and professional forwarders."
+msgstr "همکاری با شرکت‌های حمل خارجی و فورواردرهای حرفه‌ای."
+
+msgid "Expert team"
+msgstr "تیم متخصص"
+
+msgid "A specialised operations team for planning and follow-up."
+msgstr "تیم عملیات متخصص برای برنامه‌ریزی و پیگیری."
+
+msgid "Extensive international network"
+msgstr "شبکه گسترده بین‌المللی"
+
+msgid "Cooperation with foreign transport companies and professional freight forwarders."
+msgstr "همکاری با شرکت‌های حمل خارجی و فورواردرهای حرفه‌ای."
+
+msgid "Trained drivers"
+msgstr "رانندگان آموزش‌دیده"
+
+msgid "Professional drivers for the safe carriage of your goods."
+msgstr "بهره‌گیری از رانندگان حرفه‌ای برای حمل ایمن کالا."
+
+msgid "International route coverage"
+msgstr "پوشش مسیرهای بین‌المللی"
+
+msgid "Active on routes between Iran, Turkey, Europe and the region."
+msgstr "فعالیت در مسیرهای ایران، ترکیه، اروپا و کشورهای منطقه."
+
+msgid "Customs coordination"
+msgstr "هماهنگی گمرکی"
+
+msgid "Coordination with customs offices and the procedures for export and transit."
+msgstr "هماهنگی با گمرکات و انجام فرایندهای مرتبط با صادرات و ترانزیت."
+
+msgid "Transparent operations"
+msgstr "شفافیت در عملیات"
+
+msgid "A focus on standard, transparent and accountable service."
+msgstr "تمرکز بر ارائه خدمات استاندارد، شفاف و پاسخ‌گو."
+
+msgid "Submit a request"
+msgstr "ثبت درخواست"
+
+msgid "Tell us the origin, destination and type of cargo."
+msgstr "مبدأ، مقصد و نوع کالا را اعلام می‌کنید."
+
+msgid "Cargo and route review"
+msgstr "بررسی کالا و مسیر"
+
+msgid "We assess the cargo, the best route and the right truck type."
+msgstr "کالا، بهترین مسیر و نوع ناوگان مناسب را بررسی می‌کنیم."
+
+msgid "Transport and document coordination"
+msgstr "هماهنگی حمل و مدارک"
+
+msgid "Loading, customs documents and transit paperwork are arranged."
+msgstr "بارگیری، اسناد گمرکی و مدارک ترانزیت هماهنگ می‌شود."
+
+msgid "Transportation and transit"
+msgstr "انجام حمل و ترانزیت"
+
+msgid "The truck travels the route and crosses the borders with our follow-up."
+msgstr "کامیون مسیر را طی می‌کند و عبور از مرزها با پیگیری ما انجام می‌شود."
+
+msgid "Delivery"
+msgstr "تحویل کالا"
+
+msgid "Your cargo is delivered at the destination."
+msgstr "کالای شما در مقصد تحویل داده می‌شود."
+
+msgid "Pages"
+msgstr "صفحات"
+
+msgid "Persian"
+msgstr "فارسی"
+
+msgid "English"
+msgstr "انگلیسی"
+
+msgid "Turkish"
+msgstr "ترکی استانبولی"
+
+msgid "photo"
+msgstr "عکس"
+
+msgid "URL name"
+msgstr "نام در آدرس صفحه"
+
+msgid "icon"
+msgstr "آیکن"
+
+msgid "title (Persian)"
+msgstr "عنوان (فارسی)"
+
+msgid "title (English)"
+msgstr "عنوان (انگلیسی)"
+
+msgid "title (Turkish)"
+msgstr "عنوان (ترکی)"
+
+msgid "summary (Persian)"
+msgstr "خلاصه (فارسی)"
+
+msgid "summary (English)"
+msgstr "خلاصه (انگلیسی)"
+
+msgid "summary (Turkish)"
+msgstr "خلاصه (ترکی)"
+
+msgid "details (Persian)"
+msgstr "توضیحات (فارسی)"
+
+msgid "details (English)"
+msgstr "توضیحات (انگلیسی)"
+
+msgid "details (Turkish)"
+msgstr "توضیحات (ترکی)"
+
+msgid "list heading (Persian)"
+msgstr "عنوان فهرست (فارسی)"
+
+msgid "list heading (English)"
+msgstr "عنوان فهرست (انگلیسی)"
+
+msgid "list heading (Turkish)"
+msgstr "عنوان فهرست (ترکی)"
+
+msgid "list items (Persian)"
+msgstr "موارد فهرست (فارسی)"
+
+msgid "list items (English)"
+msgstr "موارد فهرست (انگلیسی)"
+
+msgid "list items (Turkish)"
+msgstr "موارد فهرست (ترکی)"
+
+msgid "second list heading (Persian)"
+msgstr "عنوان فهرست دوم (فارسی)"
+
+msgid "second list heading (English)"
+msgstr "عنوان فهرست دوم (انگلیسی)"
+
+msgid "second list heading (Turkish)"
+msgstr "عنوان فهرست دوم (ترکی)"
+
+msgid "second list items (Persian)"
+msgstr "موارد فهرست دوم (فارسی)"
+
+msgid "second list items (English)"
+msgstr "موارد فهرست دوم (انگلیسی)"
+
+msgid "second list items (Turkish)"
+msgstr "موارد فهرست دوم (ترکی)"
+
+msgid "order"
+msgstr "ترتیب"
+
+msgid "published"
+msgstr "منتشر شده"
+
+msgid "service"
+msgstr "خدمت"
+
+msgid "services"
+msgstr "خدمات"
+
+msgid "origin (Persian)"
+msgstr "مبدأ (فارسی)"
+
+msgid "origin (English)"
+msgstr "مبدأ (انگلیسی)"
+
+msgid "origin (Turkish)"
+msgstr "مبدأ (ترکی)"
+
+msgid "origin map node"
+msgstr "نقطه مبدأ روی نقشه"
+
+msgid "destination (Persian)"
+msgstr "مقصد (فارسی)"
+
+msgid "destination (English)"
+msgstr "مقصد (انگلیسی)"
+
+msgid "destination (Turkish)"
+msgstr "مقصد (ترکی)"
+
+msgid "destination map node"
+msgstr "نقطه مقصد روی نقشه"
+
+msgid "description (Persian)"
+msgstr "توضیح (فارسی)"
+
+msgid "description (English)"
+msgstr "توضیح (انگلیسی)"
+
+msgid "description (Turkish)"
+msgstr "توضیح (ترکی)"
+
+msgid "route"
+msgstr "مسیر"
+
+msgid "active routes"
+msgstr "مسیرهای فعال"
+
+msgid "built-in illustration"
+msgstr "طرح پیش‌فرض"
+
+msgid "type (Persian)"
+msgstr "نوع (فارسی)"
+
+msgid "type (English)"
+msgstr "نوع (انگلیسی)"
+
+msgid "type (Turkish)"
+msgstr "نوع (ترکی)"
+
+msgid "vehicle type"
+msgstr "نوع ناوگان"
+
+msgid "fleet"
+msgstr "ناوگان"
+
+msgid "Truck"
+msgstr "کامیون"
+
+msgid "Route / transit"
+msgstr "مسیر / ترانزیت"
+
+msgid "Container / forwarding"
+msgstr "کانتینر / فورواردرینگ"
+
+msgid "Export"
+msgstr "صادرات"
+
+msgid "Consulting"
+msgstr "مشاوره"
+
+msgid "Customs"
+msgstr "گمرک"
+
+msgid "English, e.g. road-transportation"
+msgstr "به انگلیسی، مثلاً road-transportation"
+
+msgid "One item per line."
+msgstr "هر مورد در یک خط."
+
+msgid "Node on the route map: TR, IR, EU, IQ or AZ."
+msgstr "نقطه روی نقشه مسیرها: TR، IR، EU، IQ یا AZ."
+
+msgid "Curtain-side"
+msgstr "چادری"
+
+msgid "Tanker"
+msgstr "تانکر"
+
+msgid "Refrigerated"
+msgstr "یخچال‌دار"
+
+msgid "Transit / container"
+msgstr "ترانزیتی / کانتینری"
+
+msgid "Optional real photo (landscape, ~1200 px). Replaces the illustration."
+msgstr "عکس واقعی اختیاری (افقی، حدود ۱۲۰۰ پیکسل). جایگزین طرح پیش‌فرض می‌شود."
+
+msgid "Services, routes and fleet"
+msgstr "خدمات، مسیرها و ناوگان"
+
+msgid "Request"
+msgstr "درخواست"
+
+msgid "Follow-up"
+msgstr "پیگیری"
+
+msgid "Technical"
+msgstr "اطلاعات فنی"
+
+msgid "full name"
+msgstr "نام و نام خانوادگی"
+
+msgid "phone number"
+msgstr "شماره تماس"
+
+msgid "origin"
+msgstr "مبدأ"
+
+msgid "destination"
+msgstr "مقصد"
+
+msgid "cargo type"
+msgstr "نوع کالا"
+
+msgid "message"
+msgstr "پیام"
+
+msgid "site language"
+msgstr "زبان سایت"
+
+msgid "status"
+msgstr "وضعیت"
+
+msgid "internal note"
+msgstr "یادداشت داخلی"
+
+msgid "IP address"
+msgstr "نشانی IP"
+
+msgid "received"
+msgstr "زمان دریافت"
+
+msgid "consultation request"
+msgstr "درخواست مشاوره"
+
+msgid "consultation requests"
+msgstr "درخواست‌های مشاوره"
+
+msgid "New"
+msgstr "جدید"
+
+msgid "In progress"
+msgstr "در حال پیگیری"
+
+msgid "Answered"
+msgstr "پاسخ داده شد"
+
+msgid "Spam"
+msgstr "هرزنامه"
+
+msgid "Full name"
+msgstr "نام و نام خانوادگی"
+
+msgid "Phone number"
+msgstr "شماره تماس"
+
+msgid "Origin"
+msgstr "مبدأ"
+
+msgid "Destination"
+msgstr "مقصد"
+
+msgid "Cargo type"
+msgstr "نوع کالا"
+
+msgid "Message"
+msgstr "توضیحات"
+
+msgid "For example: textiles, food products, chemicals, machinery"
+msgstr "برای مثال: پوشاک، مواد غذایی، مواد شیمیایی، ماشین‌آلات"
+
+msgid "Please enter your name."
+msgstr "لطفاً نام خود را وارد کنید."
+
+msgid "Please enter a phone number so we can call you back."
+msgstr "لطفاً شماره تماس را وارد کنید تا با شما تماس بگیریم."
+
+msgid "Please enter a valid email address."
+msgstr "لطفاً یک ایمیل معتبر وارد کنید."
+
+msgid "Please enter a valid phone number, e.g. 0912 345 6789."
+msgstr "لطفاً شماره تماس معتبر وارد کنید؛ مثلاً ۰۹۱۲ ۳۴۵ ۶۷۸۹."
+
+msgid "Please remove the links from your message."
+msgstr "لطفاً لینک‌ها را از متن پیام حذف کنید."
+
+msgid "Thank you. Your request has been received and our team will contact you shortly."
+msgstr "سپاس از شما. درخواست‌تان ثبت شد و کارشناسان ما به‌زودی با شما تماس می‌گیرند."
+
+msgid "Too many requests from your connection. Please try again later or call us directly."
+msgstr "تعداد درخواست‌ها از اتصال شما زیاد است. لطفاً بعداً تلاش کنید یا مستقیماً تماس بگیرید."
+
+msgid "Consultation requests"
+msgstr "درخواست‌های مشاوره"

@@ -1,0 +1,44 @@
+{% load i18n site_tags %}<header class="site-header{% if solid_header %} site-header--solid{% endif %}" data-header>
+  <div class="container">
+    {% include "partials/brand.html" %}
+    <nav class="main-nav" aria-label="{% translate 'Main navigation' %}">
+      <ul>
+        {% for key, label, url_name in nav_items %}
+          <li><a class="nav-link" href="{% url url_name %}"{% if active_nav == key %} aria-current="page"{% endif %}>{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="header-tools">
+      {% include "partials/lang_switch.html" %}
+      {% include "partials/theme_toggle.html" %}
+      <a class="btn btn--accent btn--sm header-cta" href="{% url 'contact:page' %}#contact-form">{% translate "Request a consultation" %}</a>
+      <button type="button" class="icon-btn menu-toggle" data-drawer-open aria-controls="drawer" aria-expanded="false" aria-label="{% translate 'Open menu' %}">{% icon 'menu' 24 %}</button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" data-drawer aria-hidden="true">
+  <div class="drawer-backdrop" data-drawer-close></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="{% translate 'Menu' %}">
+    <div class="drawer-head">
+      {% include "partials/brand.html" %}
+      <button type="button" class="icon-btn" data-drawer-close aria-label="{% translate 'Close menu' %}">{% icon 'x' 24 %}</button>
+    </div>
+    <ul class="drawer-nav">
+      {% for key, label, url_name in nav_items %}
+        <li><a href="{% url url_name %}"{% if active_nav == key %} aria-current="page"{% endif %}>{{ label }} {% icon 'arrow-left' 18 'flip-ltr' %}</a></li>
+      {% endfor %}
+    </ul>
+    <div class="drawer-foot">
+      <a class="btn btn--accent btn--block" href="{% url 'contact:page' %}#contact-form">{% icon 'headset' 20 %} {% translate "Request a consultation" %}</a>
+      <div class="drawer-contact">
+        <span>{% translate "Office" %}: <a href="tel:{{ company.office_phone_tel }}" class="ltr">{% phone_display company.office_phone %}</a></span>
+        <span>{% translate "Mobile" %}: <a href="tel:{{ company.mobile_tel }}" class="ltr">{% phone_display company.mobile %}</a></span>
+      </div>
+      <div class="drawer-row">
+        {% include "partials/lang_switch.html" %}
+        {% include "partials/theme_toggle.html" %}
+      </div>
+    </div>
+  </div>
+</div>

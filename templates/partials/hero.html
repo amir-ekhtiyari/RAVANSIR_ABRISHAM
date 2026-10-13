@@ -1,0 +1,43 @@
+{% load i18n static site_tags %}<section class="hero" data-hero aria-labelledby="hero-title">
+  <div class="hero-media" aria-hidden="true">
+    {% photo 'hero' as hero_photo %}
+    {% if company.hero_image %}
+      <img src="{{ company.hero_image.url }}" alt="" fetchpriority="high" decoding="async">
+    {% elif hero_photo %}
+      <img src="{{ hero_photo }}" alt="" fetchpriority="high" decoding="async">
+    {% else %}
+      <div class="hero-fallback"></div>
+    {% endif %}
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-trails" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-grain" aria-hidden="true"></div>
+
+  <div class="hero-inner container">
+    <div class="hero-content">
+      <p class="hero-kicker">{% translate "Iran · Turkey · Europe · Iraq · Azerbaijan" %}</p>
+      <h1 id="hero-title" data-split>{% blocktranslate trimmed %}International transportation, <span class="accent">fast, safe and reliable</span>{% endblocktranslate %}</h1>
+      <p class="hero-lead">{% translate "Professional road freight, transit and logistics solutions on the routes between Iran, Turkey, Europe and the region." %}</p>
+      <div class="hero-ctas">
+        <a class="btn btn--accent" href="{% url 'contact:page' %}#contact-form">{% translate "Request a transport consultation" %}</a>
+        <a class="btn btn--glass" href="{% url 'services:list' %}">{% translate "View services" %} {% icon 'arrow-left' 18 'flip-ltr' %}</a>
+      </div>
+    </div>
+
+    <ul class="hero-features glass-dark" aria-label="{% translate 'Our services' %}">
+      <li><a class="hero-feature" href="{% url 'services:detail' 'international-road-transportation' %}">
+        <span class="ic fi">{% icon 'truck' 22 %}</span>
+        <span><strong>{% translate "International road freight" %}</strong><small>{% translate "Turkey · Europe · Central Asia" %}</small></span></a></li>
+      <li><a class="hero-feature" href="{% url 'services:detail' 'international-transit' %}">
+        <span class="ic fi">{% icon 'route' 22 %}</span>
+        <span><strong>{% translate "Foreign transit" %}</strong><small>{% translate "Bazargan · Razi · Serow · Jolfa" %}</small></span></a></li>
+      <li><a class="hero-feature" href="{% url 'services:detail' 'freight-forwarding' %}">
+        <span class="ic fi">{% icon 'container' 22 %}</span>
+        <span><strong>{% translate "Freight forwarding" %}</strong><small>{% translate "One partner for the whole journey" %}</small></span></a></li>
+      <li><a class="hero-feature" href="{% url 'services:detail' 'export-transportation' %}">
+        <span class="ic fi">{% icon 'stamp' 22 %}</span>
+        <span><strong>{% translate "Customs & export" %}</strong><small>{% translate "Coordination with customs offices" %}</small></span></a></li>
+    </ul>
+  </div>
+</section>

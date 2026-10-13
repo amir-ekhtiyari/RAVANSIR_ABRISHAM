@@ -1,0 +1,34 @@
+{% load i18n site_tags %}{% translate "Optional" as optional_text %}
+<div class="glass form-card" id="contact-form">
+  <h3>{% translate "Request a transport consultation" %}</h3>
+  <p class="form-intro">{% translate "Tell us about your shipment. Our operations team will call you back to discuss the route, truck type and documents." %}</p>
+  <div data-form-status aria-live="polite">
+  {% if form.non_field_errors %}<div class="form-alert form-alert--error">{% icon 'circle-alert' 20 %}<div>{{ form.non_field_errors|join:" " }}</div></div>
+  {% elif form.errors %}<div class="form-alert form-alert--error">{% icon 'circle-alert' 20 %}<div>{% translate "Please check the highlighted fields." %}</div></div>{% endif %}
+  </div>
+  <form method="post" action="{% url 'contact:page' %}" novalidate data-contact-form data-success-title="{% translate 'Request received' %}" data-error-text="{% translate 'Something went wrong. Please try again or call us.' %}">
+    {% csrf_token %}
+    <div class="form-grid">
+      {% include "partials/field.html" with field=form.full_name %}
+      {% include "partials/field.html" with field=form.phone %}
+      {% include "partials/field.html" with field=form.email wide=True %}
+      {% include "partials/field.html" with field=form.origin %}
+      {% include "partials/field.html" with field=form.destination %}
+      {% include "partials/field.html" with field=form.cargo_type wide=True %}
+      {% include "partials/field.html" with field=form.message wide=True %}
+    </div>
+    <div class="hp" aria-hidden="true"><label for="{{ form.website.id_for_label }}">Website</label>{{ form.website }}</div>
+    <datalist id="place-suggestions">
+      <option value="{% translate 'Turkey' %}"></option><option value="{% translate 'Iran' %}"></option>
+      <option value="{% translate 'Europe' %}"></option><option value="{% translate 'Iraq' %}"></option>
+      <option value="{% translate 'Azerbaijan' %}"></option><option value="{% translate 'Central Asia' %}"></option>
+    </datalist>
+    <div class="form-foot">
+      <small>{% icon 'shield-check' 16 %} {% translate "Your details are used only to answer this request." %}</small>
+      <button type="submit" class="btn btn--accent">
+        <span class="btn-icon">{% icon 'send' 18 'flip-rtl' %}</span>{% icon 'loader-circle' 18 'spin' %}
+        <span data-label>{% translate "Send request" %}</span>
+      </button>
+    </div>
+  </form>
+</div>

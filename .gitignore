@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+media/
+staticfiles/
+.idea/
+.ruff_cache/
+
+# Original photos dropped into the project root (processed copies live in static/images/photos/)
+/*.jpg
+/*.jpeg
+/*.png
+/*.webp

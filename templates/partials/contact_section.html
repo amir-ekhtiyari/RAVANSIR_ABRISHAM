@@ -1,0 +1,39 @@
+{% load i18n site_tags %}{% photo 'contact' 'road' as cphoto %}<section class="section contact-section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">{% translate "Contact us" %}</span>
+      <h2 id="contact-title">{% translate "Let’s plan your next shipment" %}</h2>
+      <p class="lead">{% translate "Call our office or mobile, send an email, or fill in the form and we will get back to you." %}</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-cards">
+          <a class="glass card contact-card" href="tel:{{ company.office_phone_tel }}">
+            <span class="ic ic--light ci">{% icon 'phone' 22 %}</span>
+            <span><small>{% translate "Office" %}</small><strong class="ltr">{% phone_display company.office_phone %}</strong></span>
+            <span class="go">{% icon 'arrow-left' 18 'flip-ltr' %}</span>
+          </a>
+          <a class="glass card contact-card" href="tel:{{ company.mobile_tel }}">
+            <span class="ic ic--light ci">{% icon 'smartphone' 22 %}</span>
+            <span><small>{% translate "Mobile" %}</small><strong class="ltr">{% phone_display company.mobile %}</strong></span>
+            <span class="go">{% icon 'arrow-left' 18 'flip-ltr' %}</span>
+          </a>
+          <a class="glass card contact-card" href="mailto:{{ company.email }}">
+            <span class="ic ic--light ci">{% icon 'mail' 22 %}</span>
+            <span><small>{% translate "Email" %}</small><strong class="ltr">{{ company.email }}</strong></span>
+            <span class="go">{% icon 'arrow-left' 18 'flip-ltr' %}</span>
+          </a>
+        </div>
+        <div class="contact-photo">
+          <span class="pc-img">{% if cphoto %}<img src="{{ cphoto }}" alt="" loading="lazy" decoding="async">{% endif %}</span>
+          <div class="glass-dark">
+            <h3>{{ company|tr:'name' }}</h3>
+            <p>{% translate "International road transportation, foreign transit, freight forwarding and export transportation on the Iran–Turkey–Europe routes and the region." %}</p>
+            {% if company|tr:'address' %}<p style="margin-top:6px">{% icon 'map-pin' 16 %} {{ company|tr:'address' }}</p>{% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="reveal" data-delay="1">{% include "partials/contact_form.html" %}</div>
+    </div>
+  </div>
+</section>

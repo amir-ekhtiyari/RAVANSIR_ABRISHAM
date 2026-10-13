@@ -1,0 +1,41 @@
+{% load static i18n site_tags %}<!doctype html>
+<html lang="{{ lang }}" dir="{{ dir }}" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {# Apply the saved / system theme before first paint (no flash). #}
+  <script>(function(){var t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t);document.documentElement.classList.add('js')})();</script>
+  {% include "partials/seo.html" %}
+  <meta name="theme-color" content="#071226">
+  <link rel="icon" href="{% static 'images/favicon-32.png' %}" sizes="32x32" type="image/png">
+  <link rel="icon" href="{% static 'images/favicon-64.png' %}" sizes="64x64" type="image/png">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="preload" href="{% static 'fonts/Vazirmatn-Variable.woff2' %}" as="font" type="font/woff2" crossorigin>
+  {% if dir == 'ltr' %}<link rel="preload" href="{% static 'fonts/SpaceGrotesk-Variable.woff2' %}" as="font" type="font/woff2" crossorigin>{% endif %}
+  <link rel="stylesheet" href="{% static 'css/site.css' %}">
+  {% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+  <a class="skip-link" href="#main">{% translate "Skip to content" %}</a>
+  {% include "partials/icons.html" %}
+  {% include "partials/navbar.html" %}
+  <main id="main" tabindex="-1">
+    {% block content %}{% endblock %}
+  </main>
+  {% include "partials/footer.html" %}
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false">
+    {% for message in messages %}
+      <div class="toast{% if message.level_tag == 'error' %} toast--error{% endif %}" role="status">
+        {% if message.level_tag == 'error' %}{% icon 'circle-alert' 20 %}{% else %}{% icon 'circle-check' 20 %}{% endif %}
+        <p>{{ message }}</p>
+        <button type="button" data-toast-close aria-label="{% translate 'Close' %}">{% icon 'x' 18 %}</button>
+      </div>
+    {% endfor %}
+  </div>
+  <button type="button" class="to-top" data-to-top aria-label="{% translate 'Back to top' %}">
+    <svg class="ring" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle class="track" cx="30" cy="30" r="27"/><circle class="bar" cx="30" cy="30" r="27"/></svg>
+    <span class="arrow">{% icon 'arrow-up' 22 %}</span>
+  </button>
+  <script src="{% static 'js/site.js' %}" defer></script>
+</body>
+</html>

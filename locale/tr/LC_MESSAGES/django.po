@@ -1,0 +1,830 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ravansir_abrisham\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Step"
+msgstr "Adım"
+
+msgid "Optional"
+msgstr "İsteğe bağlı"
+
+msgid "Request a transport consultation"
+msgstr "Taşımacılık danışmanlığı isteyin"
+
+msgid "Tell us about your shipment. Our operations team will call you back to discuss the route, truck type and documents."
+msgstr "Sevkiyatınızı anlatın. Operasyon ekibimiz güzergâh, araç tipi ve belgeleri görüşmek için sizi arasın."
+
+msgid "Please check the highlighted fields."
+msgstr "Lütfen işaretli alanları kontrol edin."
+
+msgid "Request received"
+msgstr "Talebiniz alındı"
+
+msgid "Something went wrong. Please try again or call us."
+msgstr "Bir sorun oluştu. Lütfen tekrar deneyin veya bizi arayın."
+
+msgid "Turkey"
+msgstr "Türkiye"
+
+msgid "Iran"
+msgstr "İran"
+
+msgid "Europe"
+msgstr "Avrupa"
+
+msgid "Iraq"
+msgstr "Irak"
+
+msgid "Azerbaijan"
+msgstr "Azerbaycan"
+
+msgid "Central Asia"
+msgstr "Orta Asya"
+
+msgid "Your details are used only to answer this request."
+msgstr "Bilgileriniz yalnızca bu talebi yanıtlamak için kullanılır."
+
+msgid "Send request"
+msgstr "Talep gönder"
+
+msgid "Map of our active international routes"
+msgstr "Aktif uluslararası güzergâhlarımızın haritası"
+
+msgid "Bazargan"
+msgstr "Bazargan"
+
+msgid "Jolfa"
+msgstr "Culfa"
+
+msgid "Active route"
+msgstr "Aktif güzergâh"
+
+msgid "Transit border crossing"
+msgstr "Transit sınır kapısı"
+
+msgid "Active routes"
+msgstr "Aktif güzergâhlar"
+
+msgid "Connecting Iran, Turkey, Europe and the region"
+msgstr "İran, Türkiye, Avrupa ve bölgeyi birbirine bağlıyoruz"
+
+msgid "Our trucks run on these international corridors every week, with transit operations through Iran’s main border crossings."
+msgstr "Araçlarımız bu uluslararası koridorlarda düzenli olarak çalışır; transit operasyonlarını İran’ın başlıca sınır kapılarından yürütürüz."
+
+msgid "Transit operations through the <strong>Bazargan</strong>, <strong>Razi</strong>, <strong>Serow</strong> and <strong>Jolfa</strong> border crossings."
+msgstr "<strong>Bazargan</strong>, <strong>Razi</strong>, <strong>Serow</strong> ve <strong>Culfa</strong> sınır kapılarından transit operasyonları."
+
+msgid "Why choose us"
+msgstr "Neden biz"
+
+msgid "A partner you can rely on, border after border"
+msgstr "Her sınırda güvenebileceğiniz bir ortak"
+
+msgid "International transportation depends on people, partners and paperwork working together. This is how we keep your cargo moving."
+msgstr "Uluslararası taşımacılık; insanların, iş ortaklarının ve belgelerin uyum içinde çalışmasına bağlıdır. Yükünüzü bu şekilde yolda tutuyoruz."
+
+msgid "Talk to our team"
+msgstr "Ekibimizle görüşün"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "Iran · Turkey · Europe · Iraq · Azerbaijan"
+msgstr "İran · Türkiye · Avrupa · Irak · Azerbaycan"
+
+msgid "Professional road freight, transit and logistics solutions on the routes between Iran, Turkey, Europe and the region."
+msgstr "İran, Türkiye, Avrupa ve bölge ülkeleri arasındaki güzergâhlarda profesyonel karayolu taşımacılığı, transit ve lojistik çözümleri."
+
+msgid "View services"
+msgstr "Hizmetleri görün"
+
+msgid "Our services"
+msgstr "Hizmetlerimiz"
+
+msgid "International road freight"
+msgstr "Uluslararası karayolu taşımacılığı"
+
+msgid "Turkey · Europe · Central Asia"
+msgstr "Türkiye · Avrupa · Orta Asya"
+
+msgid "Foreign transit"
+msgstr "Uluslararası transit"
+
+msgid "Bazargan · Razi · Serow · Jolfa"
+msgstr "Bazargan · Razi · Serow · Culfa"
+
+msgid "Freight forwarding"
+msgstr "Taşıma organizasyonu"
+
+msgid "One partner for the whole journey"
+msgstr "Tüm yolculuk için tek muhatap"
+
+msgid "Customs & export"
+msgstr "Gümrük ve ihracat"
+
+msgid "Coordination with customs offices"
+msgstr "Gümrüklerle tam koordinasyon"
+
+msgid "International transportation, <span class=\"accent\">fast, safe and reliable</span>"
+msgstr "Uluslararası taşımacılık: <span class=\"accent\">hızlı, güvenli ve güvenilir</span>"
+
+msgid "Transportation fleet"
+msgstr "Taşıma filosu"
+
+msgid "The right truck for every cargo"
+msgstr "Her yük için doğru araç"
+
+msgid "We work with the main truck types used in international road freight, matched to your cargo and route."
+msgstr "Uluslararası karayolu taşımacılığında kullanılan başlıca araç tipleriyle çalışıyor, yükünüze ve güzergâhınıza uygun olanı seçiyoruz."
+
+msgid "Main navigation"
+msgstr "Ana menü"
+
+msgid "Request a consultation"
+msgstr "Danışmanlık isteyin"
+
+msgid "Open menu"
+msgstr "Menüyü aç"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Close menu"
+msgstr "Menüyü kapat"
+
+msgid "Office"
+msgstr "Ofis"
+
+msgid "Mobile"
+msgstr "Mobil"
+
+msgid "About the company"
+msgstr "Şirket hakkında"
+
+msgid "Years of experience on the Iran–Turkey–Europe corridor"
+msgstr "İran–Türkiye–Avrupa koridorunda yılların deneyimi"
+
+msgid "International truck of Ravan Seir Abrisham on the road"
+msgstr "Ravan Seir Abrisham’ın uluslararası tırı yolda"
+
+msgid "Iran · Turkey · Europe"
+msgstr "İran · Türkiye · Avrupa"
+
+msgid "A trusted international network"
+msgstr "Güvenilir uluslararası ağ"
+
+msgid "Foreign carriers, professional forwarders and trained drivers working as one team."
+msgstr "Yabancı nakliyeciler, profesyonel forwarder’lar ve eğitimli sürücüler tek bir ekip olarak çalışır."
+
+msgid "Contact us"
+msgstr "Bize ulaşın"
+
+msgid "Let’s plan your next shipment"
+msgstr "Bir sonraki sevkiyatınızı birlikte planlayalım"
+
+msgid "Call our office or mobile, send an email, or fill in the form and we will get back to you."
+msgstr "Ofisimizi veya mobil hattımızı arayın, e-posta gönderin ya da formu doldurun; size geri dönelim."
+
+msgid "Email"
+msgstr "E-posta"
+
+msgid "International road transportation, foreign transit, freight forwarding and export transportation on the Iran–Turkey–Europe routes and the region."
+msgstr "İran–Türkiye–Avrupa güzergâhlarında ve bölgede uluslararası karayolu taşımacılığı, transit, freight forwarding ve ihracat taşımacılığı."
+
+msgid "Breadcrumb"
+msgstr "Sayfa yolu"
+
+msgid "Home"
+msgstr "Ana sayfa"
+
+msgid "Have cargo to move between Iran, Turkey or Europe?"
+msgstr "İran, Türkiye veya Avrupa arasında taşınacak yükünüz mü var?"
+
+msgid "Send us the origin, destination and cargo type. We will suggest the route, truck type and the documents you need."
+msgstr "Çıkış noktası, varış noktası ve yük tipini bize gönderin; güzergâhı, araç tipini ve gerekli belgeleri önerelim."
+
+msgid "Details"
+msgstr "Ayrıntılar"
+
+msgid "End-to-end international road logistics"
+msgstr "Uçtan uca uluslararası karayolu lojistiği"
+
+msgid "From road freight and foreign transit to forwarding, export transportation and customs consulting – one accountable team for the whole journey."
+msgstr "Karayolu taşımacılığı ve transitten forwarding, ihracat taşımacılığı ve gümrük danışmanlığına kadar; tüm yolculuk için tek bir sorumlu ekip."
+
+msgid "All services"
+msgstr "Tüm hizmetler"
+
+msgid "Navigation"
+msgstr "Menü"
+
+msgid "Services"
+msgstr "Hizmetler"
+
+msgid "Contact"
+msgstr "İletişim"
+
+msgid "to"
+msgstr ", varış:"
+
+msgid "All rights reserved."
+msgstr "Tüm hakları saklıdır."
+
+msgid "Design & development"
+msgstr "Tasarım ve geliştirme"
+
+msgid "Switch between light and dark theme"
+msgstr "Açık ve koyu tema arasında geçiş yap"
+
+msgid "International Transportation"
+msgstr "Uluslararası Taşımacılık"
+
+msgid "How it works"
+msgstr "Nasıl çalışıyoruz"
+
+msgid "The journey of your shipment"
+msgstr "Sevkiyatınızın yolculuğu"
+
+msgid "Five clear steps from your first call to delivery at destination."
+msgstr "İlk aramanızdan varış noktasındaki teslimata kadar beş net adım."
+
+msgid "This page could not be found"
+msgstr "Bu sayfa bulunamadı"
+
+msgid "The address may be wrong or the page may have moved."
+msgstr "Adres hatalı olabilir veya sayfa taşınmış olabilir."
+
+msgid "Back to the home page"
+msgstr "Ana sayfaya dön"
+
+msgid "Skip to content"
+msgstr "İçeriğe geç"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "Back to top"
+msgstr "Başa dön"
+
+msgid "About us"
+msgstr "Hakkımızda"
+
+msgid "Request a transport consultation or reach our operations team directly by phone or email."
+msgstr "Taşımacılık danışmanlığı talep edin veya operasyon ekibimize telefon ya da e-posta ile doğrudan ulaşın."
+
+msgid "International road freight, foreign transit, freight forwarding, export transportation and consulting on transport and customs."
+msgstr "Uluslararası karayolu taşımacılığı, transit, freight forwarding, ihracat taşımacılığı ve taşımacılık-gümrük danışmanlığı."
+
+msgid "International road freight between Iran, Turkey, Europe, Iraq and Azerbaijan, with transit through Iran’s main border crossings."
+msgstr "İran, Türkiye, Avrupa, Irak ve Azerbaycan arasında karayolu taşımacılığı ve İran’ın başlıca sınır kapılarından transit."
+
+msgid "Ravan Seir Abrisham"
+msgstr "Ravan Seir Abrisham"
+
+msgid "International Road Freight & Transit | Iran – Turkey – Europe"
+msgstr "Uluslararası Karayolu Taşımacılığı ve Transit | İran – Türkiye – Avrupa"
+
+msgid "International road transportation, transit and freight forwarding between Iran, Turkey, Europe and the region. Customs coordination at Bazargan, Razi, Serow and Jolfa. Request a transport consultation."
+msgstr "İran, Türkiye, Avrupa ve bölge arasında uluslararası karayolu taşımacılığı, transit ve freight forwarding. Bazargan, Razi, Serow ve Culfa’da gümrük koordinasyonu. Taşımacılık danışmanlığı isteyin."
+
+msgid "Services – Road Freight, Transit, Forwarding & Customs Consulting"
+msgstr "Hizmetler – Karayolu Taşımacılığı, Transit, Forwarding ve Gümrük Danışmanlığı"
+
+msgid "International road transportation, transit through Iranian borders, freight forwarding, export transportation and transport and customs consulting."
+msgstr "Uluslararası karayolu taşımacılığı, İran sınırlarından transit, freight forwarding, ihracat taşımacılığı ve taşımacılık-gümrük danışmanlığı."
+
+msgid "Active Routes – Iran, Turkey, Europe, Iraq and Azerbaijan"
+msgstr "Aktif Güzergâhlar – İran, Türkiye, Avrupa, Irak ve Azerbaycan"
+
+msgid "Our active international road freight routes: Turkey to Iran, Iran to Turkey, Iran to Europe, Iran to Iraq and Iran to Azerbaijan."
+msgstr "Aktif uluslararası karayolu güzergâhlarımız: Türkiye’den İran’a, İran’dan Türkiye’ye, İran’dan Avrupa’ya, İran’dan Irak’a ve İran’dan Azerbaycan’a."
+
+msgid "About Us"
+msgstr "Hakkımızda"
+
+msgid "Years of experience in international road transportation, transit and logistics on the Iran–Turkey–Europe corridor, with a network of foreign carriers, forwarders and trained drivers."
+msgstr "İran–Türkiye–Avrupa koridorunda uluslararası karayolu taşımacılığı, transit ve lojistikte yılların deneyimi; yabancı nakliyeciler, forwarder’lar ve eğitimli sürücülerden oluşan bir ağ."
+
+msgid "Contact Us – Request a Transport Consultation"
+msgstr "İletişim – Taşımacılık Danışmanlığı İsteyin"
+
+msgid "Contact our operations team by phone, mobile or email, or send a transport consultation request with your origin, destination and cargo type."
+msgstr "Operasyon ekibimize telefon, mobil hat veya e-posta ile ulaşın ya da çıkış, varış ve yük tipini belirterek danışmanlık talebi gönderin."
+
+msgid "Routes"
+msgstr "Güzergâhlar"
+
+msgid "Ravan Seir Abrisham – website management"
+msgstr "Ravan Seir Abrisham – web sitesi yönetimi"
+
+msgid "Website content"
+msgstr "Web sitesi içeriği"
+
+msgid "Name"
+msgstr "Ad"
+
+msgid "Texts"
+msgstr "Metinler"
+
+msgid "Contact details"
+msgstr "İletişim bilgileri"
+
+msgid "Images"
+msgstr "Görseller"
+
+msgid "name (Persian)"
+msgstr "ad (Farsça)"
+
+msgid "name (English)"
+msgstr "ad (İngilizce)"
+
+msgid "name (Turkish)"
+msgstr "ad (Türkçe)"
+
+msgid "short name (Persian)"
+msgstr "kısa ad (Farsça)"
+
+msgid "short name (English)"
+msgstr "kısa ad (İngilizce)"
+
+msgid "short name (Turkish)"
+msgstr "kısa ad (Türkçe)"
+
+msgid "tagline (Persian)"
+msgstr "slogan (Farsça)"
+
+msgid "tagline (English)"
+msgstr "slogan (İngilizce)"
+
+msgid "tagline (Turkish)"
+msgstr "slogan (Türkçe)"
+
+msgid "short description (Persian)"
+msgstr "kısa açıklama (Farsça)"
+
+msgid "short description (English)"
+msgstr "kısa açıklama (İngilizce)"
+
+msgid "short description (Turkish)"
+msgstr "kısa açıklama (Türkçe)"
+
+msgid "full description (Persian)"
+msgstr "tam tanıtım (Farsça)"
+
+msgid "full description (English)"
+msgstr "tam tanıtım (İngilizce)"
+
+msgid "full description (Turkish)"
+msgstr "tam tanıtım (Türkçe)"
+
+msgid "email"
+msgstr "e-posta"
+
+msgid "office phone"
+msgstr "ofis telefonu"
+
+msgid "mobile"
+msgstr "mobil"
+
+msgid "address (Persian)"
+msgstr "adres (Farsça)"
+
+msgid "address (English)"
+msgstr "adres (İngilizce)"
+
+msgid "address (Turkish)"
+msgstr "adres (Türkçe)"
+
+msgid "logo"
+msgstr "logo"
+
+msgid "hero photo"
+msgstr "ana sayfa fotoğrafı"
+
+msgid "introduction photo"
+msgstr "tanıtım fotoğrafı"
+
+msgid "company information"
+msgstr "şirket bilgileri"
+
+msgid "Leave empty to hide the address everywhere."
+msgstr "Boş bırakılırsa adres hiçbir yerde gösterilmez."
+
+msgid "Optional. SVG or PNG; replaces the built-in mark."
+msgstr "İsteğe bağlı. SVG veya PNG; varsayılan işaretin yerine geçer."
+
+msgid "Wide landscape photo of a truck on a highway (at least 2000 px wide, WebP or JPEG). Replaces the built-in hero illustration."
+msgstr "Otoyolda bir tırın geniş yatay fotoğrafı (en az 2000 px genişlik, WebP veya JPEG). Varsayılan görselin yerine geçer."
+
+msgid "Shown next to the company introduction. Replaces the illustration."
+msgstr "Şirket tanıtımının yanında gösterilir; varsayılan görselin yerine geçer."
+
+msgid "Page not found"
+msgstr "Sayfa bulunamadı"
+
+msgid "Company information"
+msgstr "Şirket bilgileri"
+
+msgid "Experience"
+msgstr "Deneyim"
+
+msgid "Years of experience in road transportation and foreign transit."
+msgstr "Karayolu taşımacılığı ve transitte yılların deneyimi."
+
+msgid "Safety"
+msgstr "Güvenlik"
+
+msgid "Careful handling and trained drivers for the safe carriage of goods."
+msgstr "Yükün güvenle taşınması için özenli operasyon ve eğitimli sürücüler."
+
+msgid "Speed"
+msgstr "Hız"
+
+msgid "Fast coordination of loading, documents and border crossings."
+msgstr "Yükleme, belgeler ve sınır geçişlerinin hızlı koordinasyonu."
+
+msgid "Transparency"
+msgstr "Şeffaflık"
+
+msgid "Clear communication and standard, transparent services."
+msgstr "Açık iletişim ve standart, şeffaf hizmet."
+
+msgid "International network"
+msgstr "Uluslararası ağ"
+
+msgid "Partnerships with foreign carriers and professional forwarders."
+msgstr "Yabancı nakliyeciler ve profesyonel forwarder’larla iş birliği."
+
+msgid "Expert team"
+msgstr "Uzman ekip"
+
+msgid "A specialised operations team for planning and follow-up."
+msgstr "Planlama ve takip için uzman operasyon ekibi."
+
+msgid "Extensive international network"
+msgstr "Geniş uluslararası ağ"
+
+msgid "Cooperation with foreign transport companies and professional freight forwarders."
+msgstr "Yabancı taşımacılık şirketleri ve profesyonel forwarder’larla iş birliği."
+
+msgid "Trained drivers"
+msgstr "Eğitimli sürücüler"
+
+msgid "Professional drivers for the safe carriage of your goods."
+msgstr "Yükünüzün güvenle taşınması için profesyonel sürücüler."
+
+msgid "International route coverage"
+msgstr "Uluslararası güzergâh kapsamı"
+
+msgid "Active on routes between Iran, Turkey, Europe and the region."
+msgstr "İran, Türkiye, Avrupa ve bölge arasındaki güzergâhlarda aktifiz."
+
+msgid "Customs coordination"
+msgstr "Gümrük koordinasyonu"
+
+msgid "Coordination with customs offices and the procedures for export and transit."
+msgstr "Gümrük idareleriyle koordinasyon ve ihracat ile transit işlemleri."
+
+msgid "Transparent operations"
+msgstr "Şeffaf operasyon"
+
+msgid "A focus on standard, transparent and accountable service."
+msgstr "Standart, şeffaf ve hesap verebilir hizmete odaklanıyoruz."
+
+msgid "Submit a request"
+msgstr "Talep oluşturun"
+
+msgid "Tell us the origin, destination and type of cargo."
+msgstr "Çıkış noktası, varış noktası ve yük tipini bildirin."
+
+msgid "Cargo and route review"
+msgstr "Yük ve güzergâh değerlendirmesi"
+
+msgid "We assess the cargo, the best route and the right truck type."
+msgstr "Yükü, en uygun güzergâhı ve doğru araç tipini değerlendiririz."
+
+msgid "Transport and document coordination"
+msgstr "Taşıma ve belge koordinasyonu"
+
+msgid "Loading, customs documents and transit paperwork are arranged."
+msgstr "Yükleme, gümrük belgeleri ve transit evrakı hazırlanır."
+
+msgid "Transportation and transit"
+msgstr "Taşıma ve transit"
+
+msgid "The truck travels the route and crosses the borders with our follow-up."
+msgstr "Araç güzergâhı izler ve sınırları bizim takibimizle geçer."
+
+msgid "Delivery"
+msgstr "Teslimat"
+
+msgid "Your cargo is delivered at the destination."
+msgstr "Yükünüz varış noktasında teslim edilir."
+
+msgid "Pages"
+msgstr "Sayfalar"
+
+msgid "Persian"
+msgstr "Farsça"
+
+msgid "English"
+msgstr "İngilizce"
+
+msgid "Turkish"
+msgstr "Türkçe"
+
+msgid "photo"
+msgstr "fotoğraf"
+
+msgid "URL name"
+msgstr "URL adı"
+
+msgid "icon"
+msgstr "simge"
+
+msgid "title (Persian)"
+msgstr "başlık (Farsça)"
+
+msgid "title (English)"
+msgstr "başlık (İngilizce)"
+
+msgid "title (Turkish)"
+msgstr "başlık (Türkçe)"
+
+msgid "summary (Persian)"
+msgstr "özet (Farsça)"
+
+msgid "summary (English)"
+msgstr "özet (İngilizce)"
+
+msgid "summary (Turkish)"
+msgstr "özet (Türkçe)"
+
+msgid "details (Persian)"
+msgstr "ayrıntılar (Farsça)"
+
+msgid "details (English)"
+msgstr "ayrıntılar (İngilizce)"
+
+msgid "details (Turkish)"
+msgstr "ayrıntılar (Türkçe)"
+
+msgid "list heading (Persian)"
+msgstr "liste başlığı (Farsça)"
+
+msgid "list heading (English)"
+msgstr "liste başlığı (İngilizce)"
+
+msgid "list heading (Turkish)"
+msgstr "liste başlığı (Türkçe)"
+
+msgid "list items (Persian)"
+msgstr "liste öğeleri (Farsça)"
+
+msgid "list items (English)"
+msgstr "liste öğeleri (İngilizce)"
+
+msgid "list items (Turkish)"
+msgstr "liste öğeleri (Türkçe)"
+
+msgid "second list heading (Persian)"
+msgstr "ikinci liste başlığı (Farsça)"
+
+msgid "second list heading (English)"
+msgstr "ikinci liste başlığı (İngilizce)"
+
+msgid "second list heading (Turkish)"
+msgstr "ikinci liste başlığı (Türkçe)"
+
+msgid "second list items (Persian)"
+msgstr "ikinci liste öğeleri (Farsça)"
+
+msgid "second list items (English)"
+msgstr "ikinci liste öğeleri (İngilizce)"
+
+msgid "second list items (Turkish)"
+msgstr "ikinci liste öğeleri (Türkçe)"
+
+msgid "order"
+msgstr "sıra"
+
+msgid "published"
+msgstr "yayında"
+
+msgid "service"
+msgstr "hizmet"
+
+msgid "services"
+msgstr "hizmetler"
+
+msgid "origin (Persian)"
+msgstr "çıkış (Farsça)"
+
+msgid "origin (English)"
+msgstr "çıkış (İngilizce)"
+
+msgid "origin (Turkish)"
+msgstr "çıkış (Türkçe)"
+
+msgid "origin map node"
+msgstr "haritadaki çıkış noktası"
+
+msgid "destination (Persian)"
+msgstr "varış (Farsça)"
+
+msgid "destination (English)"
+msgstr "varış (İngilizce)"
+
+msgid "destination (Turkish)"
+msgstr "varış (Türkçe)"
+
+msgid "destination map node"
+msgstr "haritadaki varış noktası"
+
+msgid "description (Persian)"
+msgstr "açıklama (Farsça)"
+
+msgid "description (English)"
+msgstr "açıklama (İngilizce)"
+
+msgid "description (Turkish)"
+msgstr "açıklama (Türkçe)"
+
+msgid "route"
+msgstr "güzergâh"
+
+msgid "active routes"
+msgstr "aktif güzergâhlar"
+
+msgid "built-in illustration"
+msgstr "varsayılan çizim"
+
+msgid "type (Persian)"
+msgstr "tip (Farsça)"
+
+msgid "type (English)"
+msgstr "tip (İngilizce)"
+
+msgid "type (Turkish)"
+msgstr "tip (Türkçe)"
+
+msgid "vehicle type"
+msgstr "araç tipi"
+
+msgid "fleet"
+msgstr "filo"
+
+msgid "Truck"
+msgstr "Tır"
+
+msgid "Route / transit"
+msgstr "Güzergâh / transit"
+
+msgid "Container / forwarding"
+msgstr "Konteyner / forwarding"
+
+msgid "Export"
+msgstr "İhracat"
+
+msgid "Consulting"
+msgstr "Danışmanlık"
+
+msgid "Customs"
+msgstr "Gümrük"
+
+msgid "English, e.g. road-transportation"
+msgstr "İngilizce, ör. road-transportation"
+
+msgid "One item per line."
+msgstr "Her satıra bir öğe."
+
+msgid "Node on the route map: TR, IR, EU, IQ or AZ."
+msgstr "Güzergâh haritasındaki nokta: TR, IR, EU, IQ veya AZ."
+
+msgid "Curtain-side"
+msgstr "Tenteli"
+
+msgid "Tanker"
+msgstr "Tanker"
+
+msgid "Refrigerated"
+msgstr "Frigorifik"
+
+msgid "Transit / container"
+msgstr "Transit / konteyner"
+
+msgid "Optional real photo (landscape, ~1200 px). Replaces the illustration."
+msgstr "İsteğe bağlı gerçek fotoğraf (yatay, ~1200 px). Çizimin yerine geçer."
+
+msgid "Services, routes and fleet"
+msgstr "Hizmetler, güzergâhlar ve filo"
+
+msgid "Request"
+msgstr "Talep"
+
+msgid "Follow-up"
+msgstr "Takip"
+
+msgid "Technical"
+msgstr "Teknik"
+
+msgid "full name"
+msgstr "ad soyad"
+
+msgid "phone number"
+msgstr "telefon numarası"
+
+msgid "origin"
+msgstr "çıkış noktası"
+
+msgid "destination"
+msgstr "varış noktası"
+
+msgid "cargo type"
+msgstr "yük tipi"
+
+msgid "message"
+msgstr "mesaj"
+
+msgid "site language"
+msgstr "site dili"
+
+msgid "status"
+msgstr "durum"
+
+msgid "internal note"
+msgstr "iç not"
+
+msgid "IP address"
+msgstr "IP adresi"
+
+msgid "received"
+msgstr "alınma zamanı"
+
+msgid "consultation request"
+msgstr "danışmanlık talebi"
+
+msgid "consultation requests"
+msgstr "danışmanlık talepleri"
+
+msgid "New"
+msgstr "Yeni"
+
+msgid "In progress"
+msgstr "İşlemde"
+
+msgid "Answered"
+msgstr "Yanıtlandı"
+
+msgid "Spam"
+msgstr "Spam"
+
+msgid "Full name"
+msgstr "Ad soyad"
+
+msgid "Phone number"
+msgstr "Telefon numarası"
+
+msgid "Origin"
+msgstr "Çıkış noktası"
+
+msgid "Destination"
+msgstr "Varış noktası"
+
+msgid "Cargo type"
+msgstr "Yük tipi"
+
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "For example: textiles, food products, chemicals, machinery"
+msgstr "Örneğin: tekstil, gıda ürünleri, kimyasallar, makine"
+
+msgid "Please enter your name."
+msgstr "Lütfen adınızı girin."
+
+msgid "Please enter a phone number so we can call you back."
+msgstr "Sizi geri arayabilmemiz için lütfen bir telefon numarası girin."
+
+msgid "Please enter a valid email address."
+msgstr "Lütfen geçerli bir e-posta adresi girin."
+
+msgid "Please enter a valid phone number, e.g. 0912 345 6789."
+msgstr "Lütfen geçerli bir telefon numarası girin, ör. +90 532 123 4567."
+
+msgid "Please remove the links from your message."
+msgstr "Lütfen mesajınızdaki bağlantıları kaldırın."
+
+msgid "Thank you. Your request has been received and our team will contact you shortly."
+msgstr "Teşekkürler. Talebiniz alındı; ekibimiz kısa süre içinde sizinle iletişime geçecek."
+
+msgid "Too many requests from your connection. Please try again later or call us directly."
+msgstr "Bağlantınızdan çok fazla talep geldi. Lütfen daha sonra tekrar deneyin veya bizi doğrudan arayın."
+
+msgid "Consultation requests"
+msgstr "Danışmanlık talepleri"

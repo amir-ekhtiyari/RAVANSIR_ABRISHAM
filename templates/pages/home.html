@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  {% include "partials/hero.html" %}
+  {% include "partials/section_intro.html" %}
+  {% include "partials/section_services.html" with show_all_link=True %}
+  {% include "partials/section_routes.html" %}
+  {% include "partials/section_why.html" %}
+  {% include "partials/section_fleet.html" %}
+  {% include "partials/section_process.html" %}
+  {% include "partials/cta.html" %}
+  {% include "partials/contact_section.html" %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% load i18n site_tags %}{% photo 'svc-'|add:service.slug as svc_photo %}<a class="photo-card card service-card reveal" data-delay="{{ forloop.counter0|divisibleby:2|yesno:'1,2' }}" href="{{ service.get_absolute_url }}">
+  <span class="pc-img">{% if svc_photo %}<img src="{{ svc_photo }}" alt="" loading="lazy" decoding="async">{% endif %}</span>
+  <span class="ic service-icon">{% icon service.icon 22 %}</span>
+  <span class="pc-no" aria-hidden="true">{{ service.number }}</span>
+  <div class="pc-body glass-dark">
+    <h3>{{ service|tr:'title' }}</h3>
+    <p>{{ service|tr:'summary' }}</p>
+    {% with tags=service|tr_lines:'points' %}{% if tags %}
+    <ul class="service-tags" aria-label="{{ service|tr:'points_title' }}">{% for t in tags|slice:":4" %}<li>{{ t }}</li>{% endfor %}</ul>
+    {% endif %}{% endwith %}
+    <span class="link-arrow">{% translate "Details" %} {% icon 'arrow-left' 18 'flip-ltr' %}</span>
+  </div>
+</a>

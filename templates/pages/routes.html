@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% load i18n %}
+{% block content %}
+  {% translate "Active routes" as t %}{% translate "International road freight between Iran, Turkey, Europe, Iraq and Azerbaijan, with transit through Iran’s main border crossings." as l %}
+  {% include "partials/page_header.html" with page_photo='routes' page_title=t page_lead=l %}
+  {% include "partials/section_routes.html" %}
+  {% include "partials/section_process.html" %}
+  {% include "partials/cta.html" %}
+{% endblock %}

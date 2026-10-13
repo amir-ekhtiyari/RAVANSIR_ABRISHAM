@@ -1,0 +1,11 @@
+{% load i18n site_tags %}{% photo 'fleet-'|add:vehicle.illustration as fleet_photo %}<article class="photo-card card fleet-card reveal" data-delay="{{ forloop.counter0 }}">
+  <span class="pc-img">
+    {% if vehicle.image %}<img src="{{ vehicle.image.url }}" alt="{{ vehicle|tr:'name' }}" loading="lazy" decoding="async">
+    {% elif fleet_photo %}<img src="{{ fleet_photo }}" alt="{{ vehicle|tr:'name' }}" loading="lazy" decoding="async">{% endif %}
+  </span>
+  <span class="pc-tag">{{ vehicle.illustration|upper }}</span>
+  <div class="pc-body glass-dark">
+    <h3>{{ vehicle|tr:'name' }}</h3>
+    <p>{{ vehicle|tr:'description' }}</p>
+  </div>
+</article>

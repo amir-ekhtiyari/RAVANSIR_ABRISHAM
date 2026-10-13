@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% load i18n %}
+{% block content %}
+  {% translate "Our services" as t %}{% translate "International road freight, foreign transit, freight forwarding, export transportation and consulting on transport and customs." as l %}
+  {% include "partials/page_header.html" with page_photo='services' page_title=t page_lead=l %}
+  {% include "partials/section_services.html" %}
+  {% include "partials/section_fleet.html" %}
+  {% include "partials/cta.html" %}
+{% endblock %}

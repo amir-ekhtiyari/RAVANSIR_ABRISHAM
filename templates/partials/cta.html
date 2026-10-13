@@ -1,0 +1,15 @@
+{% load i18n site_tags %}{% photo 'cta' 'road' as bg %}<section class="section photo-section cta-section" aria-labelledby="cta-title">
+  <div class="photo-bg" aria-hidden="true">{% if bg %}<img src="{{ bg }}" alt="" loading="lazy" decoding="async">{% endif %}</div>
+  <div class="container">
+    <div class="cta-band glass-dark reveal">
+      <div>
+        <h2 id="cta-title">{% translate "Have cargo to move between Iran, Turkey or Europe?" %}</h2>
+        <p>{% translate "Send us the origin, destination and cargo type. We will suggest the route, truck type and the documents you need." %}</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn--accent" href="{% url 'contact:page' %}#contact-form">{% icon 'headset' 20 %} {% translate "Request a consultation" %}</a>
+        <a class="btn btn--glass" href="tel:{{ company.office_phone_tel }}">{% icon 'phone' 18 %} <span class="ltr">{% phone_display company.office_phone %}</span></a>
+      </div>
+    </div>
+  </div>
+</section>

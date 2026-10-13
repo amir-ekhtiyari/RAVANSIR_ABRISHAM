@@ -1,0 +1,10 @@
+{% load i18n %}<section class="section section--tint" id="fleet" aria-labelledby="fleet-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">{% translate "Transportation fleet" %}</span>
+      <h2 id="fleet-title">{% translate "The right truck for every cargo" %}</h2>
+      <p class="lead">{% translate "We work with the main truck types used in international road freight, matched to your cargo and route." %}</p>
+    </div>
+    <div class="grid fleet-grid">{% for vehicle in fleet %}{% include "partials/fleet_card.html" %}{% endfor %}</div>
+  </div>
+</section>

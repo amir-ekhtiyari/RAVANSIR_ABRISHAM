@@ -1,0 +1,16 @@
+{% load i18n static site_tags %}<li class="route-row glass-dark reveal" data-delay="{{ forloop.counter0 }}" data-route="{{ route.key }}" tabindex="0">
+  <span class="rr-no num" aria-hidden="true">{{ forloop.counter|stringformat:"02d"|local_digits }}</span>
+  <div class="rr-track">
+    <span class="rr-end">
+      {% with 'images/flags/'|add:route.origin_code|lower|add:'.svg' as flag %}<img src="{% static flag %}" alt="" width="28" height="21" loading="lazy">{% endwith %}
+      <strong>{{ route|tr:'origin' }}</strong>
+    </span>
+    <span class="rr-line" aria-hidden="true"><i></i></span>
+    <span class="visually-hidden">{% translate "to" %}</span>
+    <span class="rr-end">
+      {% with 'images/flags/'|add:route.destination_code|lower|add:'.svg' as flag %}<img src="{% static flag %}" alt="" width="28" height="21" loading="lazy">{% endwith %}
+      <strong>{{ route|tr:'destination' }}</strong>
+    </span>
+  </div>
+  {% if route|tr:'description' %}<p class="rr-desc">{{ route|tr:'description' }}</p>{% endif %}
+</li>

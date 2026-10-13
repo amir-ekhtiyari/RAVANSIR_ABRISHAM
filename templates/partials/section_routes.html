@@ -1,0 +1,13 @@
+{% load i18n site_tags %}{% photo 'routes' 'road' as bg %}<section class="section photo-section" id="routes" aria-labelledby="routes-title">
+  <div class="photo-bg" aria-hidden="true">{% if bg %}<img src="{{ bg }}" alt="" loading="lazy" decoding="async">{% endif %}</div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">{% translate "Active routes" %}</span>
+      <h2 id="routes-title">{% translate "Connecting Iran, Turkey, Europe and the region" %}</h2>
+      <p class="lead">{% translate "Our trucks run on these international corridors every week, with transit operations through Iran’s main border crossings." %}</p>
+    </div>
+    {% include "partials/route_map_geo.html" %}
+    <ul class="route-rows">{% for route in routes %}{% include "partials/route_card.html" %}{% endfor %}</ul>
+    <div class="borders-note glass-dark reveal">{% icon 'stamp' 20 %}<span>{% blocktranslate trimmed %}Transit operations through the <strong>Bazargan</strong>, <strong>Razi</strong>, <strong>Serow</strong> and <strong>Jolfa</strong> border crossings.{% endblocktranslate %}</span></div>
+  </div>
+</section>

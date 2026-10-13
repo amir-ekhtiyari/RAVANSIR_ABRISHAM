@@ -1,0 +1,25 @@
+{% extends "base.html" %}{% load i18n site_tags %}
+{% block content %}
+  {% translate "Services" as parent_label %}{% url 'services:list' as parent_url %}
+  {% with svc_key="svc-"|add:service.slug %}{% include "partials/page_header.html" with page_photo=svc_key page_title=service|tr:'title' page_lead=service|tr:'summary' eyebrow=service.number %}{% endwith %}
+  <section class="section">
+    <div class="container detail">
+      <div class="detail-body reveal">
+        {% for p in service|tr_lines:'body' %}<p>{{ p }}</p>{% endfor %}
+        {% with a=service|tr_lines:'points' b=service|tr_lines:'extra_points' %}{% if a or b %}
+        <div class="detail-lists">
+          {% if a %}<div class="glass detail-list"><h2>{{ service|tr:'points_title' }}</h2><ul>{% for i in a %}<li>{% icon 'check' 16 %}<span>{{ i }}</span></li>{% endfor %}</ul></div>{% endif %}
+          {% if b %}<div class="glass detail-list"><h2>{{ service|tr:'extra_title' }}</h2><ul>{% for i in b %}<li>{% icon 'check' 16 %}<span>{{ i }}</span></li>{% endfor %}</ul></div>{% endif %}
+        </div>
+        {% endif %}{% endwith %}
+      </div>
+      <aside class="detail-aside reveal" data-delay="1">
+        <div class="glass other-services">
+          {% for s in others %}<a href="{{ s.get_absolute_url }}"><span class="ic ic--light ic--sm">{% icon s.icon 18 %}</span><span>{{ s|tr:'title' }}</span>{% icon 'arrow-left' 16 'flip-ltr' %}</a>{% endfor %}
+        </div>
+        <a class="btn btn--accent btn--block" href="#contact-form">{% icon 'headset' 20 %} {% translate "Request a consultation" %}</a>
+      </aside>
+    </div>
+  </section>
+  {% include "partials/contact_section.html" %}
+{% endblock %}

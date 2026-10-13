@@ -1,0 +1,16 @@
+{% load i18n site_tags %}{% photo 'services' 'why' as bg %}<section class="section photo-section" id="services" aria-labelledby="services-title">
+  <div class="photo-bg" aria-hidden="true">{% if bg %}<img src="{{ bg }}" alt="" loading="lazy" decoding="async">{% endif %}</div>
+  <div class="container">
+    <div class="section-head section-head--split reveal">
+      <div>
+        <span class="eyebrow">{% translate "Our services" %}</span>
+        <h2 id="services-title">{% translate "End-to-end international road logistics" %}</h2>
+        <p class="lead">{% translate "From road freight and foreign transit to forwarding, export transportation and customs consulting – one accountable team for the whole journey." %}</p>
+      </div>
+      {% if show_all_link %}<a class="btn btn--glass" href="{% url 'services:list' %}">{% translate "All services" %} {% icon 'arrow-left' 18 'flip-ltr' %}</a>{% endif %}
+    </div>
+    <div class="grid services-grid">
+      {% for service in services %}{% include "partials/service_card.html" %}{% endfor %}
+    </div>
+  </div>
+</section>

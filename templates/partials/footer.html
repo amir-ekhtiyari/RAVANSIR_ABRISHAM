@@ -1,0 +1,40 @@
+{% load i18n static site_tags %}<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        {% include "partials/brand.html" %}
+        <p class="footer-about">{{ company|tr:'short_description'|first_sentences:1 }}</p>
+      </div>
+      <div>
+        <h2>{% translate "Navigation" %}</h2>
+        <ul>{% for key, label, url_name in nav_items %}<li><a href="{% url url_name %}">{{ label }}</a></li>{% endfor %}</ul>
+      </div>
+      <div>
+        <h2>{% translate "Services" %}</h2>
+        <ul>{% for s in footer_services %}<li><a href="{{ s.get_absolute_url }}">{{ s|tr:'title' }}</a></li>{% endfor %}</ul>
+      </div>
+      <div>
+        <h2>{% translate "Contact" %}</h2>
+        <ul class="footer-contact">
+          <li>{% icon 'phone' 18 %}<a href="tel:{{ company.office_phone_tel }}" class="ltr">{% phone_display company.office_phone %}</a></li>
+          <li>{% icon 'smartphone' 18 %}<a href="tel:{{ company.mobile_tel }}" class="ltr">{% phone_display company.mobile %}</a></li>
+          <li>{% icon 'mail' 18 %}<a href="mailto:{{ company.email }}" class="ltr">{{ company.email }}</a></li>
+          {% if company|tr:'address' %}<li>{% icon 'map-pin' 18 %}<span>{{ company|tr:'address' }}</span></li>{% endif %}
+        </ul>
+        <h2 style="margin-top:24px">{% translate "Active routes" %}</h2>
+        <ul>{% for r in footer_routes %}<li>{{ r|tr:'origin' }} <span aria-hidden="true">{% if dir == 'rtl' %}←{% else %}→{% endif %}</span><span class="visually-hidden">{% translate "to" %}</span> {{ r|tr:'destination' }}</li>{% endfor %}</ul>
+      </div>
+    </div>
+    <div class="footer-bottom glass-dark">
+      <p style="margin:0">© {% copyright_year %} {{ company|tr:'name' }}. {% translate "All rights reserved." %}</p>
+      <p class="designer-credit">
+        <span>{% translate "Design & development" %}</span>
+        <img src="{% static 'images/designer-logo.png' %}" alt="AmirEkhtiyari" width="175" height="36" decoding="async">
+      </p>
+      <div class="footer-tools">
+        {% include "partials/lang_switch.html" %}
+        {% include "partials/theme_toggle.html" %}
+      </div>
+    </div>
+  </div>
+</footer>

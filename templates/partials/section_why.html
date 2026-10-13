@@ -1,0 +1,16 @@
+{% load i18n site_tags %}{% photo 'why' 'road' as bg %}<section class="section photo-section" id="why" aria-labelledby="why-title">
+  <div class="photo-bg" aria-hidden="true">{% if bg %}<img src="{{ bg }}" alt="" loading="lazy" decoding="async">{% endif %}</div>
+  <div class="container why">
+    <div class="why-aside reveal">
+      <span class="eyebrow">{% translate "Why choose us" %}</span>
+      <h2 id="why-title" class="h2">{% translate "A partner you can rely on, border after border" %}</h2>
+      <p style="margin-top:16px">{% translate "International transportation depends on people, partners and paperwork working together. This is how we keep your cargo moving." %}</p>
+      <a class="btn btn--accent" style="margin-top:12px" href="{% url 'contact:page' %}#contact-form">{% translate "Talk to our team" %}</a>
+    </div>
+    <ul class="why-list">
+      {% for icon_name, title, text in advantages %}
+        <li class="why-item glass-dark card reveal" data-delay="{{ forloop.counter0 }}"><span class="ic why-icon">{% icon icon_name 26 %}</span><div><h3>{{ title }}</h3><p>{{ text }}</p></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+{% load i18n site_tags %}{% photo page_photo|default:'page' 'road' as bg %}<section class="photo-section page-hero">
+  <div class="photo-bg" aria-hidden="true">{% if bg %}<img src="{{ bg }}" alt="" decoding="async">{% endif %}</div>
+  <div class="container">
+    <nav aria-label="{% translate 'Breadcrumb' %}">
+      <ol class="breadcrumb">
+        <li><a href="{% url 'pages:home' %}">{% translate "Home" %}</a></li>
+        {% if parent_url %}<li aria-hidden="true">{% icon 'arrow-left' 14 'flip-ltr' %}</li><li><a href="{{ parent_url }}">{{ parent_label }}</a></li>{% endif %}
+        <li aria-hidden="true">{% icon 'arrow-left' 14 'flip-ltr' %}</li>
+        <li aria-current="page">{{ page_title }}</li>
+      </ol>
+    </nav>
+    {% if eyebrow %}<span class="eyebrow">{{ eyebrow }}</span>{% endif %}
+    <h1>{{ page_title }}</h1>
+    {% if page_lead %}<p>{{ page_lead }}</p>{% endif %}
+  </div>
+</section>

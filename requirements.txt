@@ -1,0 +1,4 @@
+Django==6.1.2
+# Production only:
+# psycopg[binary]==3.3.6   # PostgreSQL (set POSTGRES_DB in .env)
+# gunicorn==26.2.0         # Linux application server
