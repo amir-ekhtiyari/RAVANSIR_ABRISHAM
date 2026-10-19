@@ -34,7 +34,10 @@ def _cached(keys):
     for key in keys:
         found = _existing(key)
         if found:
-            return static(found)
+            url = static(found)
+            if settings.DEBUG:    # bust the browser cache when a photo is replaced under the same name
+                url += '?v=%d' % int((Path(settings.BASE_DIR) / 'static' / found).stat().st_mtime)
+            return url
     return ''
 
 

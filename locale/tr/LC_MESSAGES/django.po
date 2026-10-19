@@ -7,6 +7,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Digital business card"
+msgstr "Dijital kartvizit"
+
+msgid "Scan to save our contacts"
+msgstr "Taratın, iletişim bilgilerimizi kaydedin"
+
+msgid "Point your phone camera at the code: all our phone numbers, email and website go straight into your contacts."
+msgstr "Telefonunuzun kamerasını koda tutun: tüm telefon numaralarımız, e-postamız ve web sitemiz doğrudan rehberinize eklenir."
+
+msgid "Save contact"
+msgstr "Rehbere kaydet"
+
+msgid "QR code of this page"
+msgstr "Bu sayfanın QR kodu"
+
 msgid "Step"
 msgstr "Adım"
 
@@ -133,6 +148,33 @@ msgstr "Gümrüklerle tam koordinasyon"
 msgid "International transportation, <span class=\"accent\">fast, safe and reliable</span>"
 msgstr "Uluslararası taşımacılık: <span class=\"accent\">hızlı, güvenli ve güvenilir</span>"
 
+msgid "Close"
+msgstr "Kapat"
+
+msgid "QR code"
+msgstr "QR kod"
+
+msgid "QR code type"
+msgstr "QR kod türü"
+
+msgid "This page"
+msgstr "Bu sayfa"
+
+msgid "Contact card"
+msgstr "Kartvizit"
+
+msgid "Scan with your phone camera to open this page on your phone, or share it with others."
+msgstr "Bu sayfayı telefonunuzda açmak veya başkalarıyla paylaşmak için telefon kameranızla tarayın."
+
+msgid "Download QR"
+msgstr "QR'ı indir"
+
+msgid "Copy link"
+msgstr "Bağlantıyı kopyala"
+
+msgid "Scan to save all our phone numbers, email and website to your contacts."
+msgstr "Tüm telefon numaralarımızı, e-postamızı ve web sitemizi rehberinize kaydetmek için tarayın."
+
 msgid "Transportation fleet"
 msgstr "Taşıma filosu"
 
@@ -163,6 +205,12 @@ msgstr "Ofis"
 msgid "Mobile"
 msgstr "Mobil"
 
+msgid "Business line"
+msgstr "İş hattı"
+
+msgid "Marand office"
+msgstr "Marand ofisi"
+
 msgid "About the company"
 msgstr "Şirket hakkında"
 
@@ -190,11 +238,11 @@ msgstr "Bir sonraki sevkiyatınızı birlikte planlayalım"
 msgid "Call our office or mobile, send an email, or fill in the form and we will get back to you."
 msgstr "Ofisimizi veya mobil hattımızı arayın, e-posta gönderin ya da formu doldurun; size geri dönelim."
 
+msgid "Tehran office"
+msgstr "Tahran ofisi"
+
 msgid "Email"
 msgstr "E-posta"
-
-msgid "International road transportation, foreign transit, freight forwarding and export transportation on the Iran–Turkey–Europe routes and the region."
-msgstr "İran–Türkiye–Avrupa güzergâhlarında ve bölgede uluslararası karayolu taşımacılığı, transit, freight forwarding ve ihracat taşımacılığı."
 
 msgid "Breadcrumb"
 msgstr "Sayfa yolu"
@@ -220,6 +268,12 @@ msgstr "Karayolu taşımacılığı ve transitten forwarding, ihracat taşımac�
 msgid "All services"
 msgstr "Tüm hizmetler"
 
+msgid "International Transportation"
+msgstr "Uluslararası Taşımacılık"
+
+msgid "Scan to open on your phone"
+msgstr "Telefonunuzda açmak için tarayın"
+
 msgid "Navigation"
 msgstr "Menü"
 
@@ -229,8 +283,11 @@ msgstr "Hizmetler"
 msgid "Contact"
 msgstr "İletişim"
 
-msgid "to"
-msgstr ", varış:"
+msgid "Tehran"
+msgstr "Tahran"
+
+msgid "Marand"
+msgstr "Marand"
 
 msgid "All rights reserved."
 msgstr "Tüm hakları saklıdır."
@@ -238,11 +295,17 @@ msgstr "Tüm hakları saklıdır."
 msgid "Design & development"
 msgstr "Tasarım ve geliştirme"
 
+msgid "to"
+msgstr ", varış:"
+
+msgid "Head office"
+msgstr "Merkez ofis"
+
+msgid "Branch"
+msgstr "Şube"
+
 msgid "Switch between light and dark theme"
 msgstr "Açık ve koyu tema arasında geçiş yap"
-
-msgid "International Transportation"
-msgstr "Uluslararası Taşımacılık"
 
 msgid "How it works"
 msgstr "Nasıl çalışıyoruz"
@@ -264,9 +327,6 @@ msgstr "Ana sayfaya dön"
 
 msgid "Skip to content"
 msgstr "İçeriğe geç"
-
-msgid "Close"
-msgstr "Kapat"
 
 msgid "Back to top"
 msgstr "Başa dön"
@@ -334,6 +394,9 @@ msgstr "Metinler"
 msgid "Contact details"
 msgstr "İletişim bilgileri"
 
+msgid "Marand branch"
+msgstr "Marand şubesi"
+
 msgid "Images"
 msgstr "Görseller"
 
@@ -400,6 +463,21 @@ msgstr "adres (İngilizce)"
 msgid "address (Turkish)"
 msgstr "adres (Türkçe)"
 
+msgid "business line"
+msgstr "iş hattı"
+
+msgid "Marand branch address (Persian)"
+msgstr "Marand şube adresi (Farsça)"
+
+msgid "Marand branch address (English)"
+msgstr "Marand şube adresi (İngilizce)"
+
+msgid "Marand branch address (Turkish)"
+msgstr "Marand şube adresi (Türkçe)"
+
+msgid "Marand branch phone"
+msgstr "Marand şube telefonu"
+
 msgid "logo"
 msgstr "logo"
 
@@ -414,6 +492,9 @@ msgstr "şirket bilgileri"
 
 msgid "Leave empty to hide the address everywhere."
 msgstr "Boş bırakılırsa adres hiçbir yerde gösterilmez."
+
+msgid "Leave empty to hide the branch office."
+msgstr "Şubeyi gizlemek için boş bırakın."
 
 msgid "Optional. SVG or PNG; replaces the built-in mark."
 msgstr "İsteğe bağlı. SVG veya PNG; varsayılan işaretin yerine geçer."

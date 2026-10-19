@@ -1,4 +1,5 @@
-{% load i18n %}<section class="section photo-section process-section" id="process" aria-labelledby="process-title">
+{% load i18n site_tags %}<section class="section photo-section process-section" id="process" aria-labelledby="process-title">
+  {% photo 'road' as process_bg %}{% if process_bg %}<div class="photo-bg" aria-hidden="true"><img src="{{ process_bg }}" alt="" loading="lazy" decoding="async"></div>{% endif %}
   <div class="container">
     <div class="section-head section-head--center reveal">
       <span class="eyebrow">{% translate "How it works" %}</span>

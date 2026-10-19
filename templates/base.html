@@ -7,12 +7,12 @@
   <script>(function(){var t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t);document.documentElement.classList.add('js')})();</script>
   {% include "partials/seo.html" %}
   <meta name="theme-color" content="#071226">
-  <link rel="icon" href="{% static 'images/favicon-32.png' %}" sizes="32x32" type="image/png">
-  <link rel="icon" href="{% static 'images/favicon-64.png' %}" sizes="64x64" type="image/png">
-  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+  <link rel="icon" href="{% static 'images/rsa-favicon-32.png' %}" sizes="32x32" type="image/png">
+  <link rel="icon" href="{% static 'images/rsa-favicon-64.png' %}" sizes="64x64" type="image/png">
+  <link rel="apple-touch-icon" href="{% static 'images/rsa-apple-touch-icon.png' %}">
   <link rel="preload" href="{% static 'fonts/Vazirmatn-Variable.woff2' %}" as="font" type="font/woff2" crossorigin>
   {% if dir == 'ltr' %}<link rel="preload" href="{% static 'fonts/SpaceGrotesk-Variable.woff2' %}" as="font" type="font/woff2" crossorigin>{% endif %}
-  <link rel="stylesheet" href="{% static 'css/site.css' %}">
+  <link rel="stylesheet" href="{% static 'css/site.css' %}{% if asset_version %}?v={{ asset_version }}{% endif %}">
   {% block head %}{% endblock %}
 </head>
 <body class="{% block body_class %}{% endblock %}">
@@ -32,10 +32,11 @@
       </div>
     {% endfor %}
   </div>
+  {% include "partials/qr_dialog.html" %}
   <button type="button" class="to-top" data-to-top aria-label="{% translate 'Back to top' %}">
     <svg class="ring" viewBox="0 0 60 60" aria-hidden="true" focusable="false"><circle class="track" cx="30" cy="30" r="27"/><circle class="bar" cx="30" cy="30" r="27"/></svg>
     <span class="arrow">{% icon 'arrow-up' 22 %}</span>
   </button>
-  <script src="{% static 'js/site.js' %}" defer></script>
+  <script src="{% static 'js/site.js' %}{% if asset_version %}?v={{ asset_version }}{% endif %}" defer></script>
 </body>
 </html>

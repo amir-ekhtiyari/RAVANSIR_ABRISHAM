@@ -1,6 +1,6 @@
 {% load i18n static site_tags %}<a class="brand" href="{% url 'pages:home' %}" aria-label="{{ company|tr:'name' }} – {% translate 'Home' %}">
   {% if company.logo %}<img class="brand-logo-img" src="{{ company.logo.url }}" alt="" width="42" height="42">{% else %}
-  <img class="brand-mark" src="{% static 'images/logo-mark-light.png' %}" alt="" width="44" height="44" decoding="async">{% endif %}
+  <img class="brand-mark" src="{% static 'images/rsa-mark-light.png' %}" alt="" width="52" height="52" decoding="async">{% endif %}
   <span class="brand-text">
     <span class="brand-name">{{ company|tr:'short_name' }}</span>
     <span class="brand-sub">{% translate "International Transportation" %}</span>

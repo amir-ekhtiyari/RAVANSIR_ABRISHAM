@@ -1,0 +1,33 @@
+{% load i18n static site_tags %}{% company_vcard as vcard_text %}<dialog class="qr-dialog" id="qr-dialog" data-qr-lib="{% static 'vendor/qrcode-generator/qrcode.js' %}" aria-labelledby="qr-dialog-title">
+  <div class="qr-dialog-inner">
+    <button type="button" class="icon-btn qr-close" data-qr-close aria-label="{% translate 'Close' %}">{% icon 'x' 22 %}</button>
+    <div class="qr-dialog-head">
+      <img src="{% static 'images/rsa-mark-light.png' %}" alt="" width="44" height="44">
+      <div>
+        <h2 id="qr-dialog-title">{% translate "QR code" %}</h2>
+        <p>{{ company|tr:'name' }}</p>
+      </div>
+    </div>
+    <div class="qr-tabs" role="tablist" aria-label="{% translate 'QR code type' %}">
+      <button type="button" role="tab" id="qr-tab-page" aria-controls="qr-panel-page" aria-selected="true" data-qr-tab="page">{% icon 'link' 16 %} {% translate "This page" %}</button>
+      <button type="button" role="tab" id="qr-tab-card" aria-controls="qr-panel-card" aria-selected="false" tabindex="-1" data-qr-tab="card">{% icon 'contact' 16 %} {% translate "Contact card" %}</button>
+    </div>
+    <div class="qr-panel" role="tabpanel" id="qr-panel-page" aria-labelledby="qr-tab-page" data-qr-panel="page">
+      <div class="qr-frame"><div class="qr-code" data-qr-render data-qr-ecc="H" data-qr-logo="{% static 'images/rsa-mark.png' %}" data-qr-page></div></div>
+      <p class="qr-hint">{% translate "Scan with your phone camera to open this page on your phone, or share it with others." %}</p>
+      <p class="qr-url ltr" data-qr-url></p>
+      <div class="qr-actions">
+        <button type="button" class="btn btn--accent btn--sm" data-qr-download="page">{% icon 'download' 18 %} {% translate "Download QR" %}</button>
+        <button type="button" class="btn btn--glass btn--sm" data-qr-copy>{% icon 'link' 18 %} <span data-qr-copy-label>{% translate "Copy link" %}</span></button>
+      </div>
+    </div>
+    <div class="qr-panel" role="tabpanel" id="qr-panel-card" aria-labelledby="qr-tab-card" data-qr-panel="card" hidden>
+      <div class="qr-frame"><div class="qr-code" data-qr-render data-qr-ecc="M"></div><template data-qr-text>{{ vcard_text }}</template></div>
+      <p class="qr-hint">{% translate "Scan to save all our phone numbers, email and website to your contacts." %}</p>
+      <div class="qr-actions">
+        <button type="button" class="btn btn--accent btn--sm" data-qr-download="card">{% icon 'download' 18 %} {% translate "Download QR" %}</button>
+        <a class="btn btn--glass btn--sm" href="{% url 'vcard' %}" download>{% icon 'contact' 18 %} {% translate "Save contact" %}</a>
+      </div>
+    </div>
+  </div>
+</dialog>

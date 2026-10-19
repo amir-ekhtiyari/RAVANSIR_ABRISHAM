@@ -1,18 +1,12 @@
-{% load i18n site_tags %}<ol class="journey" data-process>
+{% load i18n site_tags %}<ol class="timeline" data-process>
   {% for icon_name, title, text in process %}
-    {% with n=forloop.counter|stringformat:'s' %}{% with step_key='step-'|add:n %}{% photo step_key as step_photo %}
-    <li class="journey-step reveal" data-delay="{{ forloop.counter0 }}">
-      <div class="js-media">
-        {% if step_photo %}<img src="{{ step_photo }}" alt="" loading="lazy" decoding="async">{% endif %}
-        <span class="js-no num" aria-hidden="true">{{ forloop.counter|stringformat:"02d"|local_digits }}</span>
-        <span class="ic js-ic">{% icon icon_name 20 %}</span>
-      </div>
-      <div class="js-body">
+    <li class="tl-step reveal" data-delay="{{ forloop.counter0 }}" style="--step: {{ forloop.counter0 }}">
+      <div class="tl-node" aria-hidden="true"><span class="num">{{ forloop.counter|stringformat:"02d"|local_digits }}</span></div>
+      <div class="tl-card">
+        <span class="tl-ic">{% icon icon_name 30 %}</span>
         <h3><span class="visually-hidden">{% translate "Step" %} {{ forloop.counter|local_digits }}: </span>{{ title }}</h3>
         <p>{{ text }}</p>
       </div>
-      {% if not forloop.last %}<span class="js-arrow" aria-hidden="true">{% icon 'arrow-left' 18 'flip-ltr' %}</span>{% endif %}
     </li>
-    {% endwith %}{% endwith %}
   {% endfor %}
 </ol>

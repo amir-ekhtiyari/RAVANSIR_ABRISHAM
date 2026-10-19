@@ -1,0 +1,13 @@
+{% load i18n static site_tags %}{% company_vcard as vcard_text %}<div class="qr-card">
+  <div class="qr-card-code" data-qr-render data-qr-ecc="M" aria-hidden="true"><span class="qr-loading"></span></div>
+  <template data-qr-text>{{ vcard_text }}</template>
+  <div class="qr-card-body">
+    <span class="qr-card-eyebrow">{% icon 'contact' 16 %} {% translate "Digital business card" %}</span>
+    <h3>{% translate "Scan to save our contacts" %}</h3>
+    <p>{% translate "Point your phone camera at the code: all our phone numbers, email and website go straight into your contacts." %}</p>
+    <div class="qr-card-actions">
+      <a class="btn btn--accent btn--sm" href="{% url 'vcard' %}" download>{% icon 'download' 18 %} {% translate "Save contact" %}</a>
+      <button type="button" class="btn btn--glass btn--sm" data-qr-open>{% icon 'qr-code' 18 %} {% translate "QR code of this page" %}</button>
+    </div>
+  </div>
+</div>

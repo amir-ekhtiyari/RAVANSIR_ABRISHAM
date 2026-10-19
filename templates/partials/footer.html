@@ -2,8 +2,15 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        {% include "partials/brand.html" %}
+        <a class="footer-brand" href="{% url 'pages:home' %}" aria-label="{{ company|tr:'name' }} – {% translate 'Home' %}">
+          <img src="{% static 'images/rsa-mark-light.png' %}" alt="" width="88" height="88" loading="lazy" decoding="async">
+          <span><strong>{{ company|tr:'short_name' }}</strong><small>{% translate "International Transportation" %}</small></span>
+        </a>
         <p class="footer-about">{{ company|tr:'short_description'|first_sentences:1 }}</p>
+        <button type="button" class="footer-qr-mini" data-qr-open aria-label="{% translate 'QR code of this page' %}">
+          <span class="fq-code" data-qr-render data-qr-ecc="M" data-qr-page aria-hidden="true"></span>
+          <span class="fq-text"><strong>{% translate "QR code" %}</strong><small>{% translate "Scan to open on your phone" %}</small></span>
+        </button>
       </div>
       <div>
         <h2>{% translate "Navigation" %}</h2>
@@ -18,11 +25,11 @@
         <ul class="footer-contact">
           <li>{% icon 'phone' 18 %}<a href="tel:{{ company.office_phone_tel }}" class="ltr">{% phone_display company.office_phone %}</a></li>
           <li>{% icon 'smartphone' 18 %}<a href="tel:{{ company.mobile_tel }}" class="ltr">{% phone_display company.mobile %}</a></li>
+          {% if company.work_phone %}<li>{% icon 'briefcase' 18 %}<a href="tel:{{ company.work_phone_tel }}" class="ltr">{% phone_display company.work_phone %}</a></li>{% endif %}
           <li>{% icon 'mail' 18 %}<a href="mailto:{{ company.email }}" class="ltr">{{ company.email }}</a></li>
-          {% if company|tr:'address' %}<li>{% icon 'map-pin' 18 %}<span>{{ company|tr:'address' }}</span></li>{% endif %}
+          {% if company|tr:'address' %}<li>{% icon 'building' 18 %}<span><strong>{% translate "Tehran" %}:</strong> {{ company|tr:'address' }}</span></li>{% endif %}
+          {% if company|tr:'branch_address' %}<li>{% icon 'map-pin' 18 %}<span><strong>{% translate "Marand" %}:</strong> {{ company|tr:'branch_address' }}{% if company.branch_phone %} – <a href="tel:{{ company.branch_phone_tel }}" class="ltr">{% phone_display company.branch_phone %}</a>{% endif %}</span></li>{% endif %}
         </ul>
-        <h2 style="margin-top:24px">{% translate "Active routes" %}</h2>
-        <ul>{% for r in footer_routes %}<li>{{ r|tr:'origin' }} <span aria-hidden="true">{% if dir == 'rtl' %}←{% else %}→{% endif %}</span><span class="visually-hidden">{% translate "to" %}</span> {{ r|tr:'destination' }}</li>{% endfor %}</ul>
       </div>
     </div>
     <div class="footer-bottom glass-dark">

@@ -125,6 +125,10 @@ else:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CACHES = {'default': {'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'}}
+# Shared by all gunicorn workers in a container (rate limits and company-info refresh stay consistent).
+if env('DJANGO_CACHE_DIR'):
+    CACHES = {'default': {'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+                          'LOCATION': env('DJANGO_CACHE_DIR')}}
 if env('REDIS_URL'):
     CACHES = {'default': {'BACKEND': 'django.core.cache.backends.redis.RedisCache', 'LOCATION': env('REDIS_URL')}}
 
@@ -193,13 +197,18 @@ SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin'
 
 if not DEBUG:
+    # The site runs behind a reverse proxy (Caddy / nginx) that terminates TLS.
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    SECURE_SSL_REDIRECT = env_bool('DJANGO_SECURE_SSL_REDIRECT', True)
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
-    LANGUAGE_COOKIE_SECURE = True
-    SECURE_HSTS_SECONDS = int(env('DJANGO_HSTS_SECONDS', str(60 * 60 * 24 * 30)))
+    USE_X_FORWARDED_HOST = env_bool('DJANGO_USE_X_FORWARDED_HOST', False)
+    # DJANGO_HTTPS=0 only for a first test over plain http://<server-ip> before the domain is ready.
+    HTTPS = env_bool('DJANGO_HTTPS', True)
+    SECURE_SSL_REDIRECT = HTTPS and env_bool('DJANGO_SECURE_SSL_REDIRECT', True)
+    SESSION_COOKIE_SECURE = HTTPS
+    CSRF_COOKIE_SECURE = HTTPS
+    LANGUAGE_COOKIE_SECURE = HTTPS
+    SECURE_HSTS_SECONDS = int(env('DJANGO_HSTS_SECONDS', str(60 * 60 * 24 * 30))) if HTTPS else 0
     SECURE_HSTS_INCLUDE_SUBDOMAINS = env_bool('DJANGO_HSTS_INCLUDE_SUBDOMAINS', False)
+    SECURE_REDIRECT_EXEMPT = [r'^healthz$']
 
 LOGGING = {
     'version': 1,

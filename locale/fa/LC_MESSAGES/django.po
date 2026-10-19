@@ -7,6 +7,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgid "Digital business card"
+msgstr "کارت ویزیت دیجیتال"
+
+msgid "Scan to save our contacts"
+msgstr "اسکن کنید و شماره‌های ما را ذخیره کنید"
+
+msgid "Point your phone camera at the code: all our phone numbers, email and website go straight into your contacts."
+msgstr "دوربین گوشی را روی کد بگیرید تا همه‌ی شماره‌ها، ایمیل و وب‌سایت ما مستقیم در مخاطبین شما ذخیره شود."
+
+msgid "Save contact"
+msgstr "ذخیره در مخاطبین"
+
+msgid "QR code of this page"
+msgstr "کد QR این صفحه"
+
 msgid "Step"
 msgstr "مرحله"
 
@@ -133,6 +148,33 @@ msgstr "هماهنگی کامل با گمرکات"
 msgid "International transportation, <span class=\"accent\">fast, safe and reliable</span>"
 msgstr "حمل‌ونقل بین‌المللی، <span class=\"accent\">سریع، ایمن و مطمئن</span>"
 
+msgid "Close"
+msgstr "بستن"
+
+msgid "QR code"
+msgstr "کد QR"
+
+msgid "QR code type"
+msgstr "نوع کد QR"
+
+msgid "This page"
+msgstr "این صفحه"
+
+msgid "Contact card"
+msgstr "کارت تماس"
+
+msgid "Scan with your phone camera to open this page on your phone, or share it with others."
+msgstr "با دوربین گوشی اسکن کنید تا همین صفحه روی گوشی باز شود، یا آن را برای دیگران بفرستید."
+
+msgid "Download QR"
+msgstr "دانلود QR"
+
+msgid "Copy link"
+msgstr "کپی لینک"
+
+msgid "Scan to save all our phone numbers, email and website to your contacts."
+msgstr "با اسکن این کد، همه‌ی شماره‌ها، ایمیل و وب‌سایت ما در مخاطبین گوشی ذخیره می‌شود."
+
 msgid "Transportation fleet"
 msgstr "ناوگان حمل"
 
@@ -163,6 +205,12 @@ msgstr "دفتر"
 msgid "Mobile"
 msgstr "موبایل"
 
+msgid "Business line"
+msgstr "خط کاری"
+
+msgid "Marand office"
+msgstr "دفتر مرند"
+
 msgid "About the company"
 msgstr "درباره شرکت"
 
@@ -190,11 +238,11 @@ msgstr "حمل بعدی‌تان را با هم برنامه‌ریزی کنیم
 msgid "Call our office or mobile, send an email, or fill in the form and we will get back to you."
 msgstr "با دفتر یا موبایل تماس بگیرید، ایمیل بفرستید یا فرم را تکمیل کنید تا با شما تماس بگیریم."
 
+msgid "Tehran office"
+msgstr "دفتر تهران"
+
 msgid "Email"
 msgstr "ایمیل"
-
-msgid "International road transportation, foreign transit, freight forwarding and export transportation on the Iran–Turkey–Europe routes and the region."
-msgstr "حمل‌ونقل جاده‌ای بین‌المللی، ترانزیت خارجی، فورواردرینگ و حمل صادراتی در مسیرهای ایران–ترکیه–اروپا و کشورهای منطقه."
 
 msgid "Breadcrumb"
 msgstr "مسیر صفحه"
@@ -220,6 +268,12 @@ msgstr "از حمل جاده‌ای و ترانزیت خارجی تا فوروا
 msgid "All services"
 msgstr "همه خدمات"
 
+msgid "International Transportation"
+msgstr "حمل‌ونقل بین‌المللی"
+
+msgid "Scan to open on your phone"
+msgstr "برای باز کردن در گوشی اسکن کنید"
+
 msgid "Navigation"
 msgstr "دسترسی سریع"
 
@@ -229,8 +283,11 @@ msgstr "خدمات"
 msgid "Contact"
 msgstr "تماس با ما"
 
-msgid "to"
-msgstr "به"
+msgid "Tehran"
+msgstr "تهران"
+
+msgid "Marand"
+msgstr "مرند"
 
 msgid "All rights reserved."
 msgstr "تمامی حقوق محفوظ است."
@@ -238,11 +295,17 @@ msgstr "تمامی حقوق محفوظ است."
 msgid "Design & development"
 msgstr "طراحی و توسعه"
 
+msgid "to"
+msgstr "به"
+
+msgid "Head office"
+msgstr "دفتر مرکزی"
+
+msgid "Branch"
+msgstr "شعبه"
+
 msgid "Switch between light and dark theme"
 msgstr "تغییر حالت روشن و تیره"
-
-msgid "International Transportation"
-msgstr "حمل‌ونقل بین‌المللی"
 
 msgid "How it works"
 msgstr "فرایند همکاری"
@@ -264,9 +327,6 @@ msgstr "بازگشت به صفحه اصلی"
 
 msgid "Skip to content"
 msgstr "رفتن به محتوای اصلی"
-
-msgid "Close"
-msgstr "بستن"
 
 msgid "Back to top"
 msgstr "بازگشت به بالا"
@@ -334,6 +394,9 @@ msgstr "متن‌ها"
 msgid "Contact details"
 msgstr "اطلاعات تماس"
 
+msgid "Marand branch"
+msgstr "شعبه مرند"
+
 msgid "Images"
 msgstr "تصاویر"
 
@@ -400,6 +463,21 @@ msgstr "نشانی (انگلیسی)"
 msgid "address (Turkish)"
 msgstr "نشانی (ترکی)"
 
+msgid "business line"
+msgstr "خط کاری"
+
+msgid "Marand branch address (Persian)"
+msgstr "نشانی شعبه مرند (فارسی)"
+
+msgid "Marand branch address (English)"
+msgstr "نشانی شعبه مرند (انگلیسی)"
+
+msgid "Marand branch address (Turkish)"
+msgstr "نشانی شعبه مرند (ترکی)"
+
+msgid "Marand branch phone"
+msgstr "تلفن شعبه مرند"
+
 msgid "logo"
 msgstr "لوگو"
 
@@ -414,6 +492,9 @@ msgstr "اطلاعات شرکت"
 
 msgid "Leave empty to hide the address everywhere."
 msgstr "اگر خالی بماند، نشانی در هیچ‌جای سایت نمایش داده نمی‌شود."
+
+msgid "Leave empty to hide the branch office."
+msgstr "برای پنهان کردن شعبه، خالی بگذارید."
 
 msgid "Optional. SVG or PNG; replaces the built-in mark."
 msgstr "اختیاری. فایل SVG یا PNG؛ جایگزین نشان پیش‌فرض می‌شود."

@@ -64,6 +64,12 @@ class CompanyInfo(Translated):
                                   help_text=_('Leave empty to hide the address everywhere.'))
     address_en = models.CharField(_('address (English)'), max_length=255, blank=True)
     address_tr = models.CharField(_('address (Turkish)'), max_length=255, blank=True)
+    work_phone = models.CharField(_('business line'), max_length=20, blank=True)
+    branch_address_fa = models.CharField(_('Marand branch address (Persian)'), max_length=255, blank=True,
+                                         help_text=_('Leave empty to hide the branch office.'))
+    branch_address_en = models.CharField(_('Marand branch address (English)'), max_length=255, blank=True)
+    branch_address_tr = models.CharField(_('Marand branch address (Turkish)'), max_length=255, blank=True)
+    branch_phone = models.CharField(_('Marand branch phone'), max_length=20, blank=True)
 
     logo = models.FileField(_('logo'), upload_to='company/', blank=True, validators=[
         FileExtensionValidator(['svg', 'png', 'webp'])], help_text=_('Optional. SVG or PNG; replaces the built-in mark.'))
@@ -107,6 +113,14 @@ class CompanyInfo(Translated):
     @property
     def mobile_tel(self):
         return _tel(self.mobile)
+
+    @property
+    def work_phone_tel(self):
+        return _tel(self.work_phone) if self.work_phone else ''
+
+    @property
+    def branch_phone_tel(self):
+        return _tel(self.branch_phone) if self.branch_phone else ''
 
 
 def _tel(number):

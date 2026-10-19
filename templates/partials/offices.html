@@ -1,0 +1,18 @@
+{% load i18n site_tags %}{% if company|tr:'address' or company|tr:'branch_address' %}<div class="offices">
+  {% if company|tr:'address' %}<article class="office glass card">
+    <span class="ic ic--light ci">{% icon 'building' 22 %}</span>
+    <div>
+      <h3><span class="office-tag">{% translate "Head office" %}</span> {% translate "Tehran" %}</h3>
+      <p>{{ company|tr:'address' }}</p>
+      <a href="tel:{{ company.office_phone_tel }}" class="office-tel">{% icon 'phone' 16 %} <span class="ltr">{% phone_display company.office_phone %}</span></a>
+    </div>
+  </article>{% endif %}
+  {% if company|tr:'branch_address' %}<article class="office glass card">
+    <span class="ic ic--light ci">{% icon 'map-pin' 22 %}</span>
+    <div>
+      <h3><span class="office-tag">{% translate "Branch" %}</span> {% translate "Marand" %}</h3>
+      <p>{{ company|tr:'branch_address' }}</p>
+      {% if company.branch_phone %}<a href="tel:{{ company.branch_phone_tel }}" class="office-tel">{% icon 'phone' 16 %} <span class="ltr">{% phone_display company.branch_phone %}</span></a>{% endif %}
+    </div>
+  </article>{% endif %}
+</div>{% endif %}

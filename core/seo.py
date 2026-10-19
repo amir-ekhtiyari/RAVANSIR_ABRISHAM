@@ -55,7 +55,7 @@ def page_seo(request, key, title=None, description=None, image=None):
         'canonical': settings.SITE_URL + path,
         'alternates': alternates,
         'x_default': settings.SITE_URL + translate_url(path, settings.LANGUAGE_CODE),
-        'image': image or settings.SITE_URL + static('images/og-image.png'),
+        'image': image or settings.SITE_URL + static('images/og-rsa.png'),
         'locale': {'fa': 'fa_IR', 'en': 'en_US', 'tr': 'tr_TR'}[current_lang()],
         'type': 'website',
     }

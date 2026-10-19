@@ -11,6 +11,7 @@
     <div class="header-tools">
       {% include "partials/lang_switch.html" %}
       {% include "partials/theme_toggle.html" %}
+      <button type="button" class="icon-btn qr-toggle" data-qr-open aria-haspopup="dialog" aria-label="{% translate 'QR code of this page' %}" title="{% translate 'QR code' %}">{% icon 'qr-code' 20 %}</button>
       <a class="btn btn--accent btn--sm header-cta" href="{% url 'contact:page' %}#contact-form">{% translate "Request a consultation" %}</a>
       <button type="button" class="icon-btn menu-toggle" data-drawer-open aria-controls="drawer" aria-expanded="false" aria-label="{% translate 'Open menu' %}">{% icon 'menu' 24 %}</button>
     </div>
@@ -34,6 +35,8 @@
       <div class="drawer-contact">
         <span>{% translate "Office" %}: <a href="tel:{{ company.office_phone_tel }}" class="ltr">{% phone_display company.office_phone %}</a></span>
         <span>{% translate "Mobile" %}: <a href="tel:{{ company.mobile_tel }}" class="ltr">{% phone_display company.mobile %}</a></span>
+        {% if company.work_phone %}<span>{% translate "Business line" %}: <a href="tel:{{ company.work_phone_tel }}" class="ltr">{% phone_display company.work_phone %}</a></span>{% endif %}
+        {% if company.branch_phone %}<span>{% translate "Marand office" %}: <a href="tel:{{ company.branch_phone_tel }}" class="ltr">{% phone_display company.branch_phone %}</a></span>{% endif %}
       </div>
       <div class="drawer-row">
         {% include "partials/lang_switch.html" %}

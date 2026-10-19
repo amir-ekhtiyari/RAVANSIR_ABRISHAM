@@ -136,3 +136,21 @@ class ContactTests(TestCase):
         token = page.cookies['csrftoken'].value
         resp = client.post(self.url, {**VALID, 'csrfmiddlewaretoken': token})
         self.assertEqual(resp.status_code, 302)
+
+
+class ContactCardTests(TestCase):
+    def setUp(self):
+        cache.clear()
+
+    def test_offices_and_vcard(self):
+        response = self.client.get('/contact/')
+        self.assertContains(response, 'طالقانی')
+        self.assertContains(response, 'مرند')
+        self.assertContains(response, 'data-qr-open')
+        card = self.client.get('/en/contact-card.vcf')
+        self.assertEqual(card.status_code, 200)
+        self.assertTrue(card['Content-Type'].startswith('text/vcard'))
+        body = card.content.decode()
+        self.assertIn('BEGIN:VCARD', body)
+        self.assertIn('Taleghani', body)
+        self.assertIn('Marand', body)

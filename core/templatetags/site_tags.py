@@ -43,6 +43,8 @@ def phone_display(number):
         grouped = f'{digits[:4]} {digits[4:7]} {digits[7:]}'
     elif digits.startswith('0') and len(digits) == 11:
         grouped = f'{digits[:3]} {digits[3:7]} {digits[7:]}'
+    elif digits.startswith('0') and len(digits) == 10:
+        grouped = f'{digits[:4]} {digits[4:7]} {digits[7:]}'
     else:
         grouped = digits
     return local_digits(grouped)
@@ -76,3 +78,10 @@ def photo(*keys, general=True):
     """{% photo 'fleet-tanker' 'svc-international-road-transportation' as url %} → static URL or ''."""
     from core.photos import photo_url
     return photo_url(*keys, general=general)
+
+
+@register.simple_tag(takes_context=True)
+def company_vcard(context):
+    """vCard text of the company, for the contact-card QR code."""
+    from core.vcard import company_vcard as build
+    return build(context.get('company'), compact=True)

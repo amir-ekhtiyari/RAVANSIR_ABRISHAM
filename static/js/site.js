@@ -93,10 +93,16 @@
             var r = hero.getBoundingClientRect();
             hero.style.setProperty('--mx', (e.clientX - r.left) + 'px');
             hero.style.setProperty('--my', (e.clientY - r.top) + 'px');
+            hero.style.setProperty('--tx', ((e.clientX - r.left) / r.width * 2 - 1).toFixed(3));
+            hero.style.setProperty('--ty', ((e.clientY - r.top) / r.height * 2 - 1).toFixed(3));
           });
         });
         hero.addEventListener('pointerenter', function () { hero.classList.add('is-hover'); });
-        hero.addEventListener('pointerleave', function () { hero.classList.remove('is-hover'); });
+        hero.addEventListener('pointerleave', function () {
+          hero.classList.remove('is-hover');
+          hero.style.setProperty('--tx', 0);
+          hero.style.setProperty('--ty', 0);
+        });
       }
 
       var parallaxFrame = 0;
@@ -113,6 +119,175 @@
       }, { passive: true });
       updateParallax();
     }
+  }
+
+  /* ---------- QR codes: page link + digital business card (library loaded on demand) ---------- */
+  var qrDialog = document.getElementById('qr-dialog');
+  var qrLibPromise = null;
+  var loadQrLib = function () {
+    if (window.qrcode) return Promise.resolve(window.qrcode);
+    if (!qrLibPromise) {
+      qrLibPromise = new Promise(function (resolve, reject) {
+        var src = qrDialog && qrDialog.getAttribute('data-qr-lib');
+        if (!src) { reject(new Error('QR library path missing')); return; }
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.onload = function () { resolve(window.qrcode); };
+        tag.onerror = reject;
+        document.head.appendChild(tag);
+      });
+    }
+    return qrLibPromise;
+  };
+  var pageUrl = function () { return window.location.href.split('#')[0]; };
+  var qrText = function (box) {
+    if (box.hasAttribute('data-qr-page')) return pageUrl();
+    var holder = box.parentNode.querySelector('template[data-qr-text]');
+    return holder ? (holder.content ? holder.content.textContent : holder.textContent) : '';
+  };
+  var buildQr = function (qrcode, text, ecc) {
+    qrcode.stringToBytes = qrcode.stringToBytesFuncs['UTF-8'];
+    var qr = qrcode(0, ecc || 'M');
+    qr.addData(text, 'Byte');
+    qr.make();
+    return qr;
+  };
+  var renderQr = function (box) {
+    var text = qrText(box);
+    if (!text) return Promise.resolve();
+    return loadQrLib().then(function (qrcode) {
+      var qr = buildQr(qrcode, text, box.getAttribute('data-qr-ecc'));
+      box._qr = qr;
+      box.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+      var svg = box.querySelector('svg');
+      if (svg) { svg.setAttribute('aria-hidden', 'true'); svg.setAttribute('focusable', 'false'); }
+      var logo = box.getAttribute('data-qr-logo');
+      if (logo && !box.querySelector('.qr-logo')) {
+        var badge = document.createElement('span');
+        badge.className = 'qr-logo';
+        badge.innerHTML = '<img src="' + logo + '" alt="">';
+        box.appendChild(badge);
+      }
+      box.classList.add('is-ready');
+    });
+  };
+  // A crisp PNG (with a white quiet zone and the logo for the page code) for printing or sharing.
+  var downloadQr = function (box, filename) {
+    var qr = box && box._qr;
+    if (!qr) return;
+    var count = qr.getModuleCount();
+    var scale = Math.max(8, Math.ceil(1024 / count));
+    var quiet = 4 * scale;
+    var size = count * scale + quiet * 2;
+    var canvas = document.createElement('canvas');
+    canvas.width = canvas.height = size;
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, size, size);
+    ctx.fillStyle = '#0b1424';
+    for (var r = 0; r < count; r++) {
+      for (var c = 0; c < count; c++) {
+        if (qr.isDark(r, c)) ctx.fillRect(quiet + c * scale, quiet + r * scale, scale, scale);
+      }
+    }
+    var finish = function () {
+      var link = document.createElement('a');
+      link.download = filename;
+      link.href = canvas.toDataURL('image/png');
+      document.body.appendChild(link); link.click(); link.remove();
+    };
+    var logo = box.getAttribute('data-qr-logo');
+    if (!logo) { finish(); return; }
+    var img = new Image();
+    img.onload = function () {
+      var s = size * 0.22, x = (size - s) / 2, pad = s * 0.12;
+      ctx.fillStyle = '#ffffff';
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(x - pad, x - pad, s + pad * 2, s + pad * 2, s * 0.2); else ctx.rect(x - pad, x - pad, s + pad * 2, s + pad * 2);
+      ctx.fill();
+      ctx.drawImage(img, x, x, s, s);
+      finish();
+    };
+    img.onerror = finish;
+    img.src = logo;
+  };
+
+  // Business-card QR in the contact section: render when it comes into view.
+  var inlineQr = document.querySelectorAll('.qr-card [data-qr-render], .footer-qr-mini [data-qr-render]');
+  if (inlineQr.length) {
+    if ('IntersectionObserver' in window) {
+      var qrObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { qrObserver.unobserve(entry.target); renderQr(entry.target); }
+        });
+      }, { rootMargin: '200px' });
+      inlineQr.forEach(function (el) { qrObserver.observe(el); });
+    } else {
+      inlineQr.forEach(renderQr);
+    }
+  }
+
+  if (qrDialog && typeof qrDialog.showModal === 'function') {
+    var qrLastFocus = null;
+    var selectTab = function (name) {
+      qrDialog.querySelectorAll('[data-qr-tab]').forEach(function (tab) {
+        var on = tab.getAttribute('data-qr-tab') === name;
+        tab.setAttribute('aria-selected', on ? 'true' : 'false');
+        tab.tabIndex = on ? 0 : -1;
+      });
+      qrDialog.querySelectorAll('[data-qr-panel]').forEach(function (panel) {
+        panel.hidden = panel.getAttribute('data-qr-panel') !== name;
+        if (!panel.hidden) panel.querySelectorAll('[data-qr-render]').forEach(function (box) { if (!box._qr) renderQr(box); });
+      });
+    };
+    var openQr = function (trigger) {
+      qrLastFocus = trigger || document.activeElement;
+      var urlLabel = qrDialog.querySelector('[data-qr-url]');
+      if (urlLabel) urlLabel.textContent = decodeURI(pageUrl());
+      qrDialog.querySelectorAll('[data-qr-page]').forEach(function (box) { box._qr = null; });
+      selectTab('page');
+      if (typeof closeDrawer === 'function' && drawer && drawer.classList.contains('is-open')) closeDrawer();
+      qrDialog.showModal();
+      document.body.classList.add('no-scroll');
+    };
+    document.addEventListener('click', function (e) {
+      var opener = e.target.closest('[data-qr-open]');
+      if (opener) { e.preventDefault(); openQr(opener); }
+    });
+    qrDialog.addEventListener('close', function () {
+      document.body.classList.remove('no-scroll');
+      if (qrLastFocus && qrLastFocus.focus) qrLastFocus.focus();
+    });
+    qrDialog.addEventListener('click', function (e) {
+      if (e.target === qrDialog || e.target.closest('[data-qr-close]')) qrDialog.close();
+      var tab = e.target.closest('[data-qr-tab]');
+      if (tab) selectTab(tab.getAttribute('data-qr-tab'));
+      var dl = e.target.closest('[data-qr-download]');
+      if (dl) {
+        var which = dl.getAttribute('data-qr-download');
+        downloadQr(qrDialog.querySelector('[data-qr-panel="' + which + '"] [data-qr-render]'),
+          which === 'page' ? 'ravan-seir-abrisham-qr.png' : 'ravan-seir-abrisham-contact-qr.png');
+      }
+      var copy = e.target.closest('[data-qr-copy]');
+      if (copy && navigator.clipboard) {
+        navigator.clipboard.writeText(pageUrl()).then(function () {
+          var label = copy.querySelector('[data-qr-copy-label]');
+          if (!label) return;
+          var original = label.getAttribute('data-original') || label.textContent;
+          label.setAttribute('data-original', original);
+          label.textContent = '✓';
+          setTimeout(function () { label.textContent = original; }, 1600);
+        });
+      }
+    });
+    qrDialog.addEventListener('keydown', function (e) {
+      var tab = e.target.closest('[data-qr-tab]');
+      if (!tab || (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight')) return;
+      var next = tab.getAttribute('data-qr-tab') === 'page' ? 'card' : 'page';
+      selectTab(next);
+      qrDialog.querySelector('[data-qr-tab="' + next + '"]').focus();
+    });
+  } else {
+    document.querySelectorAll('[data-qr-open]').forEach(function (btn) { btn.hidden = true; });
   }
 
   /* ---------- Back to top (with scroll-progress ring) ---------- */

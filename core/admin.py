@@ -17,7 +17,9 @@ class CompanyInfoAdmin(admin.ModelAdmin):
                                 'tagline_fa', 'tagline_en', 'tagline_tr')}),
         (_('Texts'), {'fields': ('short_description_fa', 'short_description_en', 'short_description_tr',
                                  'description_fa', 'description_en', 'description_tr')}),
-        (_('Contact details'), {'fields': ('email', 'office_phone', 'mobile', 'address_fa', 'address_en', 'address_tr')}),
+        (_('Contact details'), {'fields': ('email', 'office_phone', 'mobile', 'work_phone',
+                                           'address_fa', 'address_en', 'address_tr')}),
+        (_('Marand branch'), {'fields': ('branch_address_fa', 'branch_address_en', 'branch_address_tr', 'branch_phone')}),
         (_('Images'), {'fields': ('logo', 'hero_image', 'about_image')}),
     )
 
